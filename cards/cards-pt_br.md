@@ -106,7 +106,7 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 **Canalizar:** Sempre que este aliado estiver em Foco, coloque **1 marcador** nesta carta.
 
-**Encantar a Plateia:** Gaste 1 marcador para fazer *Quillian* *Distrair* um alvo próximo temporariamente, reduzindo a Dificuldade do alvo em **-2**. Você pode gastar 3 marcadores adicionais para cada alvo extra que quiser *Distrair* desta forma.
+**Encantar a Plateia:** Gaste 1 marcador para *Quillian* poder *Distrair* um alvo próximo temporariamente, reduzindo a Dificuldade do alvo em **-2**. Você pode gastar 3 marcadores adicionais para cada alvo extra que quiser *Distrair* desta forma.
 
 ---
 
@@ -182,7 +182,7 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Lyra Bonciel-Negraluna
 
-### Elfo - Aristocrática - Oráculo
+### Elfo - Aristocrático - Oráculo
 
 > Herdeira de uma linhagem mística, vive interpretando o destino nas cartas de quem cruza seu caminho.
 
@@ -210,7 +210,7 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Saheera de Kalil
 
-### Pequenina - Desértica - Xamã
+### Pequenina - Desértico - Xamã
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 
