@@ -6,9 +6,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Gilbert de Balzath
 
-### Aliado - Fora da Lei - Pistoleiro
+### Elfo - Fora da Lei - Pistoleiro
 
-> Misterioso Meio-Elfo andarilho de Aredhel, sempre está preparado com suas pepperbox.
+> Andarilho de origens incertas, sempre pronto com sua arma de múltiplos disparos.
 
 **Inspirado:** Sempre que um aliado rolar com Esperança em sua Dualidade, coloque **1 marcador** nesta carta.
 
@@ -20,9 +20,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Coltan Ganzorig
 
-### Aliado - Montanhês - Revolucionário
+### Fauno - Montanhês - Rebelde
 
-> Um jovem de 20 anos com temperamento explosivo, sangue em seus olhos mas amor a sua família.
+> De mãos calejadas e espírito inflamado, luta tanto por sustento quanto por quem ama.
 
 **Triunfo:** Sempre que um adversário for derrotado, coloque **1 marcador** nesta carta.
 
@@ -34,9 +34,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Damir e Ched
 
-### Aliado - Montanhês - Mineiradores
+### Fauno - Montanhês - Mineirador
 
-> Jovens trabalhadores das minas, carregando suas picaretas pesadas para quebrar pedras... ou monstros.
+> Jovens trabalhadores carregando suas picaretas pesadas para quebrar pedras... ou monstros.
 
 **Oportunista:** Toda vez que um aliado errar um ataque, coloque **1 marcador** nesta carta.
 
@@ -46,9 +46,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Sovann Rai
 
-### Aliado - Disciplinado - Clérigo
+### Quacho - Disciplinado - Clérigo
 
-> Clérigo do Concílio da Última Vigília, ele é um Ribbet gentil e bom samaritano em uma peregrinação.
+> Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
 
 **Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque **1 marcador** nesta carta.
 
@@ -58,9 +58,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Karl Bouldervein
 
-### Aliado - Subterrâneo - Caçador
+### Anão - Subterrâneo - Caçador
 
-> Caçador das encostas, Karl prefere resolver problemas com um único disparo amplo de sua espingarda.
+> Veterano das encostas, acredita que um bom disparo resolve o que palavras não conseguem.
 
 **Oportunista:** Toda vez que um aliado errar um ataque, coloque **1 marcador** nesta carta.
 
@@ -72,9 +72,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Elizabeth Ironsong
 
-### Aliado - Erudita - Cronista
+### Humano - Erudita - Cronista
 
-> Jovem pesquisadora, está escrevendo um livro sobre a História de Ortharos sob a perspectiva de aventureiros.
+> Jovem pesquisadora, dedicada a registrar as histórias do mundo sob o olhar de quem as vive.
 
 **Testemunhar (2):** Sempre que um aliado marcar 2 ou mais Pontos de Vida, coloque **1 marcador** nesta carta.
 
@@ -84,9 +84,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Lukas Bifurson
 
-### Aliado - Bélico - Estrategista
+### Infernis - Bélico - Estrategista
 
-> Velho guerreiro e estrategista das terras de Jannengard, guia de terreno e membro da Guilda do Chifre Torto.
+> Um velho estrategista, cuja sabedoria foi forjada tanto na guerra quanto nos caminhos que percorreu.
 
 **Preparado (3):** Este aliado começa com **3 marcadores** nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
@@ -100,19 +100,19 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Quillian Shadowmoon
 
-### Aliado - Aristocrático - Bardo
+### Símio - Aristocrático - Bardo
 
-> Bardo viajante famoso por toda Ortharos, está em tour apresentando sua música pelo continente.
+> Bardo viajante de renome, leva sua música a todos os cantos por onde passa.
 
-**Preparado (1):** Este aliado começa com **1 marcador** nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+**Canalizar:** Sempre que este aliado estiver em Foco, coloque **1 marcador** nesta carta.
 
-**Encantar a Plateia:** Gaste **1 marcador** para *Quillian* poder *Distrair* um alvo próximo temporariamente, reduzindo a Dificuldade do alvo em -2.
+**Encantar a Plateia:** Gaste 1 marcador para fazer *Quillian* *Distrair* um alvo próximo temporariamente, reduzindo a Dificuldade do alvo em **-2**. Você pode gastar 3 marcadores adicionais para cada alvo extra que quiser *Distrair* desta forma.
 
 ---
 
 ## Bernô Kyrellan
 
-### Aliado - Nômade - Comerciante
+### Canin - Nômade - Comerciante
 
 > Mercador sempre em busca de oportunidades. Ele fala rápido, sorri muito e desaparece ao sinal de perigo.
 
@@ -128,9 +128,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Callum O'Mara
 
-### Aliado - Campestre - Fazendeiro
+### Firbolg - Campestre - Fazendeiro
 
-> Firbolg das planícies geladas, Callum canta antigas canções de colheita enquanto protege sua terra.
+> Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
 **Triunfo:** Sempre que um adversário for derrotado, coloque **1 marcador** nesta carta.
 
@@ -142,7 +142,7 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Tamim Paracelsos
 
-### Aliado - Marítimo - Alquimista
+### Pequenino - Marítimo - Alquimista
 
 > Excêntrico alquimista, ele afirma estar aperfeiçoando “a fórmula definitiva da combustão controlada”.
 
@@ -156,9 +156,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Andrey de Gèovan
 
-### Aliado - Fora da Lei - Caçador
+### Humano - Fora da Lei - Caçador
 
-> Caçador de Géovan, conhecido por enfrentar criaturas que outros evitam. Seu olhar parece conhecer a morte.
+> Integrante de uma ordem oculta, dedica-se a eliminar ameaças que não deveriam existir.
 
 **Rastrear:** Sempre que um aliado causar dano a um adversário, coloque **1 marcador** nesta carta.
 
@@ -170,9 +170,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Fionna MacTine
 
-### Aliado - Disciplinada - Feiticeira
+### Fada - Disciplinada - Feiticeira
 
-> Feiticeira piromante, ela acredita que poucas coisas são tão impressionantes quanto uma explosão arcana.
+> Feiticeira piromante, cujo temperamento acende chamas que ela nem sempre consegue conter.
 
 **Canalizar:** Sempre que este aliado estiver em Foco, coloque **1 marcador** nesta carta.
 
@@ -182,9 +182,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Lyra Bonciel-Negraluna
 
-### Aliado - Aristocrática - Oráculo
+### Elfo - Aristocrática - Oráculo
 
-> Jovem nobre, filha de uma clériga e de um invocador, ela prevê seus movimentos através das cartas de Tarot.
+> Herdeira de uma linhagem mística, vive interpretando o destino nas cartas de quem cruza seu caminho.
 
 **Presságio:** Sempre que um aliado usar uma Experiência em uma rolagem, coloque **1 marcador** nesta carta.
 
@@ -196,9 +196,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Danièlle Mallet
 
-### Aliado - Erudita - Maga
+### Gnomo - Erudita - Maga
 
-> Pequena Gnomo que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
+> Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 
 **Canalizar:** Sempre que este aliado estiver em Foco, coloque **1 marcador** nesta carta.
 
@@ -210,9 +210,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Saheera de Kalil
 
-### Aliado - Desértica - Xamã
+### Pequenina - Desértica - Xamã
 
-> Guia halfling das rotas de Elrian, Saheera protege caravanas com talismãs que carregam os espíritos do deserto.
+> Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 
 **Presságio:** Sempre que um aliado usar uma Experiência em uma rolagem, coloque **1 marcador** nesta carta.
 
@@ -222,9 +222,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Seth das Dunas
 
-### Aliado - Nômade - Sobrevivente
+### Katari - Nômade - Sobrevivente
 
-> Katari errante das dunas de Elrian, Seth aprendeu que no deserto sobreviver é mais importante que vencer.
+> Errante das terras áridas, aprendeu que sobreviver é sempre a melhor vitória.
 
 **Pressionado:** Sempre que um aliado rolar com Medo em sua Dualidade, coloque **1 marcador** nesta carta.
 
@@ -234,9 +234,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Kapu, o Portador
 
-### Aliado - Campestre - Guardião
+### Galapa - Campestre - Guardião
 
-> Nômade que carrega talismãs capazes de absorver o cansaço espiritual daqueles que viajam ao seu lado.
+> Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
 
 **Preparado (3):** Este aliado começa com **3 marcadores** nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
@@ -246,9 +246,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Yakov Kargan
 
-### Aliado - Desértico - Escudeiro
+### Orc - Desértico - Invocador
 
-> Orc guardião das tribos de Elrian, ele canaliza os espíritos da areia para endurecer a pele daqueles que protege.
+> Dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 
 **Pressionado:** Sempre que um aliado rolar com Medo em sua Dualidade, coloque **1 marcador** nesta carta.
 
@@ -258,9 +258,9 @@ Uma coleção de Cartas de Aliados para Daggerheart.
 
 ## Elbek Bataa
 
-### Aliado - Peregrino - Batedor
+### Drakona - Peregrino - Batedor
 
-> Nômade acostumado a sobreviver às dunas traiçoeiras, Elbek enxerga erros antes que se tornem fatais.
+> Com um olhar atento e poucas palavras, transforma erros em segundas chances.
 
 **Preparado (2):** Este aliado começa com **2 marcadores** nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
