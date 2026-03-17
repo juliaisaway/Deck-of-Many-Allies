@@ -76,3 +76,47 @@ Uma carta de aliado pode ter no máximo **6 marcadores** ao mesmo tempo.
 Se um efeito adicionaria marcadores além desse limite, ignore o excesso.
 
 Algumas cartas podem alterar esse limite. Quando isso acontecer, a própria carta indicará a nova regra.
+
+---
+
+## Dano e Fadiga
+
+Por padrão em Daggerheart, aliados não possuem ficha própria, nem Pontos de Vida ou Pontos de Fadiga. Eles representam suporte narrativo e mecânico aos personagens jogadores.
+
+Ainda assim, aliados não são imunes a perigos. Eles podem se ferir gravemente ou até mesmo morrer, conforme a ficção da cena.
+
+Cabe ao mestre decidir:
+
+- como os adversários interagem com aliados
+- quando um aliado é colocado em risco
+- quais são as consequências narrativas desses eventos
+
+---
+
+## Regras Opcionais
+
+As regras a seguir podem ser utilizadas para dar mais peso mecânico aos aliados em sua mesa.
+
+---
+
+### Pontos de Vida e Fadiga
+
+Se desejar tratar aliados como personagens completos, você pode atribuir a eles Pontos de Vida e Pontos de Fadiga.
+
+Sugestão:
+
+- **Pontos de Vida:** entre 3 e 5  
+- **Pontos de Fadiga:** entre 1 e 3  
+
+---
+
+### Limiares de Dano
+
+Use a tabela abaixo para determinar os limiares de dano de acordo com o patamar da campanha:
+
+| Patamar | Dano Maior | Dano Grave |
+|---------|------------|------------|
+| 1º      | 7          | 12         |
+| 2º      | 10         | 20         |
+| 3º      | 20         | 32         |
+| 4º      | 25         | 40         |
