@@ -60,11 +60,11 @@ Aliados que Canalizam acumulam poder lentamente enquanto permanecem no centro da
 
 ---
 
-## Presságio
+## Prever
 
 > Sempre que um aliado usar uma Experiência em uma rolagem, coloque 1 marcador nesta carta.
 
-Aliados com Presságio observam padrões, sinais e coincidências. Quando alguém usa sua experiência para influenciar o destino, esses aliados se fortalecem.
+Aliados com Prever observam padrões, sinais e coincidências. Quando alguém usa sua experiência para influenciar o destino, esses aliados se fortalecem.
 
 ---
 
