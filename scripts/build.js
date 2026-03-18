@@ -2,9 +2,38 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+// ===== CONFIG =====
+
+const BASE_LOCALE = "en_us";
+
+// ===== LOCALES (dinâmico) =====
+
+function getLocales() {
+  const alliesPath = "data/allies";
+
+  if (!fs.existsSync(alliesPath)) return [];
+
+  return fs.readdirSync(alliesPath).filter((name) => {
+    const fullPath = path.join(alliesPath, name);
+
+    return (
+      fs.statSync(fullPath).isDirectory() && /^[a-z]{2}(_[a-z]{2})?$/.test(name)
+    );
+  });
+}
+
 // ===== LOAD FILES =====
 
-function loadFiles(dir) {
+function loadFiles(dir, fallbackDir = null) {
+  if (!fs.existsSync(dir)) {
+    if (fallbackDir && fs.existsSync(fallbackDir)) {
+      console.warn(`⚠️ Fallback used: ${dir} → ${fallbackDir}`);
+      dir = fallbackDir;
+    } else {
+      return [];
+    }
+  }
+
   const files = fs.readdirSync(dir);
 
   return files.map((file) => {
@@ -39,10 +68,14 @@ function shiftHeadings(content, level = 1) {
 
 // ===== LOAD DICTIONARY =====
 
-function loadDictionary(dir) {
+function loadDictionary(dir, fallbackDir = null) {
   if (!fs.existsSync(dir)) {
-    console.warn(`⚠️ Missing dictionary folder: ${dir}`);
-    return {};
+    if (fallbackDir && fs.existsSync(fallbackDir)) {
+      console.warn(`⚠️ Fallback dict: ${dir} → ${fallbackDir}`);
+      dir = fallbackDir;
+    } else {
+      return {};
+    }
   }
 
   const files = fs.readdirSync(dir);
@@ -52,10 +85,7 @@ function loadDictionary(dir) {
     const raw = fs.readFileSync(path.join(dir, file), "utf-8");
     const { data } = matter(raw);
 
-    if (!data.id || !data.name) {
-      console.warn(`⚠️ Invalid dictionary entry: ${file}`);
-      return;
-    }
+    if (!data.id || !data.name) return;
 
     dict[data.id] = data.name;
   });
@@ -74,7 +104,7 @@ function resolveList(value, dict) {
 
 function resolveSingle(value, dict, fieldName, name) {
   if (Array.isArray(value)) {
-    console.warn(`⚠️ ${name} has multiple ${fieldName}, expected single value`);
+    console.warn(`⚠️ ${name} has multiple ${fieldName}`);
     return value.map((v) => dict[v] || v).join(" / ");
   }
   return dict[value] || value;
@@ -92,54 +122,74 @@ function renderSection(title, items) {
   return `## ${title}\n\n${content.join("\n\n---\n\n")}`;
 }
 
-// ===== BUILD FUNCTION =====
+// ===== LABELS =====
+
+const LABELS = {
+  en_us: {
+    lang: "EN-US",
+    basic: "Basic Rules",
+    optional: "Optional Rules",
+    keywords: "Keywords",
+    allies: "Allies",
+    rulesTitle: "Rules",
+  },
+  pt_br: {
+    lang: "PT-BR",
+    basic: "Regras Básicas",
+    optional: "Regras Opcionais",
+    keywords: "Keywords",
+    allies: "Aliados",
+    rulesTitle: "Regras",
+  },
+};
+
+// ===== BUILD =====
 
 function build(locale) {
   const basePath = "data";
 
-  // ===== LOAD DATA =====
+  const fallback = BASE_LOCALE;
 
-  const basicRules = loadFiles(`${basePath}/rules/${locale}/basic-rules`).sort(
-    sortByOrder,
-  );
+  // ===== LOAD DATA COM FALLBACK =====
+
+  const basicRules = loadFiles(
+    `${basePath}/rules/${locale}/basic-rules`,
+    `${basePath}/rules/${fallback}/basic-rules`,
+  ).sort(sortByOrder);
+
   const optionalRules = loadFiles(
     `${basePath}/rules/${locale}/optional-rules`,
+    `${basePath}/rules/${fallback}/optional-rules`,
   ).sort(sortByOrder);
-  const keywords = loadFiles(`${basePath}/rules/${locale}/keywords`).sort(
-    sortByTitle,
+
+  const keywords = loadFiles(
+    `${basePath}/rules/${locale}/keywords`,
+    `${basePath}/rules/${fallback}/keywords`,
+  ).sort(sortByTitle);
+
+  const allies = loadFiles(
+    `${basePath}/allies/${locale}`,
+    `${basePath}/allies/${fallback}`,
+  ).sort((a, b) => a.name.localeCompare(b.name));
+
+  // ===== DICTS =====
+
+  const ancestriesDict = loadDictionary(
+    `${basePath}/ancestries/${locale}`,
+    `${basePath}/ancestries/${fallback}`,
   );
-  const allies = loadFiles(`${basePath}/allies/${locale}`).sort((a, b) =>
-    a.name.localeCompare(b.name),
+
+  const communitiesDict = loadDictionary(
+    `${basePath}/communities/${locale}`,
+    `${basePath}/communities/${fallback}`,
   );
 
-  // ===== DICTIONARIES =====
+  const rolesDict = loadDictionary(
+    `${basePath}/roles/${locale}`,
+    `${basePath}/roles/${fallback}`,
+  );
 
-  const ancestriesDict = loadDictionary(`${basePath}/ancestries/${locale}`);
-  const communitiesDict = loadDictionary(`${basePath}/communities/${locale}`);
-  const rolesDict = loadDictionary(`${basePath}/roles/${locale}`);
-
-  // ===== LABELS =====
-
-  const labels = {
-    pt_br: {
-      lang: "PT-BR",
-      basic: "Regras Básicas",
-      optional: "Regras Opcionais",
-      keywords: "Keywords",
-      allies: "Aliados",
-      rulesTitle: "Regras",
-    },
-    en_us: {
-      lang: "EN-US",
-      basic: "Basic Rules",
-      optional: "Optional Rules",
-      keywords: "Keywords",
-      allies: "Allies",
-      rulesTitle: "Rules",
-    },
-  };
-
-  const t = labels[locale];
+  const t = LABELS[locale] || LABELS[fallback];
 
   // ===== RENDER ALLIES =====
 
@@ -152,7 +202,6 @@ function build(locale) {
 
       const ancestry = resolveList(a.ancestry, ancestriesDict);
       const role = resolveList(a.role, rolesDict);
-
       const community = resolveSingle(
         a.community,
         communitiesDict,
@@ -160,7 +209,6 @@ function build(locale) {
         a.name,
       );
 
-      // ✨ NOVO FORMATO
       const meta = `#### ${ancestry} • ${community} • ${role}`;
 
       return `${name}\n\n${meta}\n\n${body}`;
@@ -219,7 +267,10 @@ ${renderAllies(allies)}
 
 // ===== EXECUTE =====
 
-build("pt_br");
-build("en_us");
+const locales = getLocales();
 
-console.log("✅ Builds generated!");
+locales.forEach((locale) => {
+  build(locale);
+});
+
+console.log("✅ Builds generated for:", locales.join(", "));

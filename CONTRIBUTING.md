@@ -27,7 +27,7 @@ Templates are available in:
 
 ## 🃏 Adding a New Ally
 
-> Use the templates in `/data/_templates` as a starting point.
+> Use the templates in `/_templates` as a starting point.
 
 ### 1. Create the file
 

@@ -29,6 +29,7 @@ All content is written in Markdown and compiled into ready-to-use documents.
 
 `/data/`
 
+- `/_templates_` → Example files for creating new content  
 - `/allies` → Individual allies  
 - `/ancestries` → Ancestry definitions  
 - `/communities` → Community definitions  

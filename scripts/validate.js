@@ -4,8 +4,12 @@ import matter from "gray-matter";
 
 // ===== CONFIG =====
 
-const LOCALES = ["pt_br", "en_us"];
-const BASE_LOCALE = "pt_br";
+const LOCALES = fs.readdirSync("data/allies").filter((file) => {
+  const fullPath = path.join("data/allies", file);
+  return fs.statSync(fullPath).isDirectory();
+});
+
+const BASE_LOCALE = "en_us";
 
 // ===== SCHEMAS =====
 
@@ -274,13 +278,14 @@ function validateCrossLocale(results) {
 
     ["allies", "keywords", "ancestries", "communities", "roles"].forEach(
       (type) => {
+        // ===== MISSING → WARNING
         base[type].forEach((id) => {
-          assert(
-            data[type].has(id),
-            `[i18n] Missing ${type} in ${locale}: ${id}`,
-          );
+          if (!data[type].has(id)) {
+            console.warn(`⚠️ [i18n] Missing ${type} in ${locale}: ${id}`);
+          }
         });
 
+        // ===== EXTRA → ERROR
         data[type].forEach((id) => {
           assert(
             base[type].has(id),
