@@ -1,5 +1,5 @@
 ---
-id: focus
+id: spotlight
 title: Foco
 order: 3
 ---
@@ -12,4 +12,4 @@ Isso permite que o jogador:
 
 - mova o aliado
 - ative habilidades do aliado
-- interaja com o campo de batalha através dele
+- interaja com o mapa de batalha através dele

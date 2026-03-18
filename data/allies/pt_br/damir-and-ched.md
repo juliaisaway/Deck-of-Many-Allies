@@ -14,6 +14,6 @@ tags: [damage, melee]
 
 > Jovens trabalhadores carregando suas picaretas pesadas para quebrar pedras... ou monstros.
 
-**Oportunista:** Toda vez que um aliado errar um ataque, coloque **1 marcador** nesta carta.
+**Oportunista:** Toda vez que um aliado errar um ataque, coloque 1 marcador nesta carta.
 
-**Picaretada Brutal:** **Gaste 3 marcadores** para fazer *Damir e Ched* dar **2d6+3** de dano físico em um adversário em alcance corpo a corpo.
+**Picaretada Brutal:** Gaste 3 marcadores para fazer Damir e Ched dar 2d6+3 de dano físico em um adversário em alcance corpo a corpo.

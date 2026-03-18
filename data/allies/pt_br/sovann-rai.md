@@ -14,6 +14,6 @@ tags: [support, heal, fatigue]
 
 > Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
 
-**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque **1 marcador** nesta carta.
+**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
 
-**Bênção Restauradora:** **Gaste 3 marcadores** para fazer *Sovann* recuperar **1 Ponto de Vida** ou **1 Ponto de Fadiga** de um aliado em alcance corpo a corpo.
+**Bênção Restauradora:** Gaste 3 marcadores para fazer Sovann recuperar 1 Ponto de Vida ou 1 Ponto de Fadiga de um aliado em alcance corpo a corpo.

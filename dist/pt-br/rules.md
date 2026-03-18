@@ -34,13 +34,13 @@ Isso permite que o jogador:
 
 - mova o aliado
 - ative habilidades do aliado
-- interaja com o campo de batalha através dele
+- interaja com o mapa de batalha através dele
 
 ---
 
 ### Posicionamento e Movimentação
 
-Um aliado é representado por uma miniatura no campo de batalha, assim como qualquer personagem.
+Um aliado é representado por uma miniatura no mapa de batalha, assim como qualquer personagem.
 
 Quando o jogador que controla o aliado estiver em Foco, ele pode mover o aliado para um ponto em **alcance próximo** como parte de suas ações.
 

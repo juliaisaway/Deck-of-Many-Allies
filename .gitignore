@@ -13,5 +13,5 @@ Thumbs.db
 # env
 .env
 
-# build cache (se tiver no futuro)
+# build cache
 .cache/
