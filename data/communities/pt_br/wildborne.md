@@ -1,4 +1,5 @@
 ---
-id: duneborne
+id: wildborne
 name: Silvestre
+source: daggerheart-srd
 ---

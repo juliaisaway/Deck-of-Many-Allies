@@ -206,7 +206,7 @@
 
 ### Saheya de Kalyr
 
-#### Pequenino • Silvestre • Espiritista
+#### Pequenino • Desértico • Espiritista
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 
@@ -256,7 +256,7 @@
 
 ### Yakov Kargan
 
-#### Orc • Silvestre • Invocador
+#### Orc • Desértico • Invocador
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

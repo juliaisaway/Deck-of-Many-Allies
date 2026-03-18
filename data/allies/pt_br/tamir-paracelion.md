@@ -1,5 +1,5 @@
 ---
-id: Tamir-Paracelion
+id: tamir-paracelion
 name: Tamir Paracelion
 
 ancestry: halfling

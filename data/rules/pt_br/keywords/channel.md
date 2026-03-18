@@ -1,7 +1,7 @@
 ---
 id: channel
 title: Canalizar
-type: state
+type: trigger
 ---
 
 > Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.

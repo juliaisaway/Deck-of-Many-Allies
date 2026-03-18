@@ -1,7 +1,7 @@
 ---
 id: channel
 title: Channel
-type: state
+type: trigger
 ---
 
 > Whenever this ally gains the spotlight, place 1 token on this card.

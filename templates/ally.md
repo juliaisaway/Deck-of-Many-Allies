@@ -8,6 +8,8 @@ role: bard                     # string OR array: [bard, healer]
 
 keywords: [track]
 tags: [support, control]
+
+author: your-name
 ---
 
 # Ally Name

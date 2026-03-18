@@ -7,6 +7,36 @@ import matter from "gray-matter";
 const LOCALES = ["pt_br", "en_us"];
 const BASE_LOCALE = "pt_br";
 
+// ===== SCHEMAS =====
+
+const ALLY_SCHEMA = [
+  "id",
+  "name",
+  "ancestry",
+  "community",
+  "role",
+  "keywords",
+  "tags",
+  "author",
+];
+
+const KEYWORD_SCHEMA = [
+  "id",
+  "title",
+  "type",
+  "has_parameter",
+  "parameter",
+  "author", // opcional
+];
+
+const VALID_KEYWORD_TYPES = ["passive", "trigger", "active", "scaling"];
+
+const ANCESTRY_SCHEMA = ["id", "name", "source", "author"];
+const COMMUNITY_SCHEMA = ["id", "name", "source", "author"];
+const ROLE_SCHEMA = ["id", "name", "author"];
+
+const VALID_SOURCES = ["daggerheart-srd", "the-void-playtest", "custom"];
+
 // ===== LOAD FILES =====
 
 function loadFiles(dir) {
@@ -15,22 +45,14 @@ function loadFiles(dir) {
     return [];
   }
 
-  return fs.readdirSync(dir).map((file) => {
-    const raw = fs.readFileSync(path.join(dir, file), "utf-8");
-    const { data } = matter(raw);
-    return { file, data };
-  });
-}
-
-// ===== LOAD IDS FROM DICTIONARY =====
-
-function loadIds(dir) {
-  if (!fs.existsSync(dir)) {
-    console.warn(`⚠️ Missing directory: ${dir}`);
-    return new Set();
-  }
-
-  return new Set(fs.readdirSync(dir).map((file) => file.replace(".md", "")));
+  return fs
+    .readdirSync(dir)
+    .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+      const { data, content } = matter(raw);
+      return { file, data, content };
+    });
 }
 
 // ===== ASSERT =====
@@ -44,6 +66,23 @@ function assert(condition, message) {
 
 // ===== HELPERS =====
 
+function isKebabCase(str) {
+  return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(str);
+}
+
+function extractTitle(content) {
+  const match = content.match(/^#\s+(.+)$/m);
+  return match ? match[1].trim() : null;
+}
+
+function validateSchema(data, schema, file, locale) {
+  Object.keys(data).forEach((key) => {
+    if (!schema.includes(key)) {
+      assert(false, `[${locale}] ${file} has unknown field: ${key}`);
+    }
+  });
+}
+
 function validateList(value, validSet, fieldName, file, locale) {
   const values = Array.isArray(value) ? value : [value];
 
@@ -55,6 +94,52 @@ function validateList(value, validSet, fieldName, file, locale) {
   });
 }
 
+// ===== DICTIONARY =====
+
+function validateDictionary(dir, label, locale, schema) {
+  const items = loadFiles(dir);
+  const ids = new Set();
+
+  items.forEach(({ file, data }) => {
+    const filename = file.replace(".md", "");
+
+    validateSchema(data, schema, `${label}/${file}`, locale);
+
+    assert(data.id, `[${locale}] ${label}/${file} missing id`);
+    assert(data.name, `[${locale}] ${label}/${file} missing name`);
+
+    // source (se existir no schema)
+    if (schema.includes("source")) {
+      assert(data.source, `[${locale}] ${label}/${file} missing source`);
+
+      assert(
+        VALID_SOURCES.includes(data.source),
+        `[${locale}] ${label}/${file} invalid source: ${data.source}`,
+      );
+    }
+
+    // author opcional → não valida
+
+    assert(
+      isKebabCase(data.id),
+      `[${locale}] ${label}/${file} id must be kebab-case`,
+    );
+
+    assert(
+      data.id === filename,
+      `[${locale}] ${label}/${file} filename must match id`,
+    );
+
+    if (ids.has(data.id)) {
+      assert(false, `[${locale}] duplicate ${label} id: ${data.id}`);
+    }
+
+    ids.add(data.id);
+  });
+
+  return ids;
+}
+
 // ===== VALIDATE PER LOCALE =====
 
 function validateLocale(locale) {
@@ -63,17 +148,58 @@ function validateLocale(locale) {
   const allies = loadFiles(`${basePath}/allies/${locale}`);
   const keywords = loadFiles(`${basePath}/rules/${locale}/keywords`);
 
-  const ancestries = loadIds(`${basePath}/ancestries/${locale}`);
-  const communities = loadIds(`${basePath}/communities/${locale}`);
-  const roles = loadIds(`${basePath}/roles/${locale}`);
+  const ancestries = validateDictionary(
+    `${basePath}/ancestries/${locale}`,
+    "ancestry",
+    locale,
+    ANCESTRY_SCHEMA,
+  );
+
+  const communities = validateDictionary(
+    `${basePath}/communities/${locale}`,
+    "community",
+    locale,
+    COMMUNITY_SCHEMA,
+  );
+
+  const roles = validateDictionary(
+    `${basePath}/roles/${locale}`,
+    "role",
+    locale,
+    ROLE_SCHEMA,
+  );
 
   // ===== KEYWORDS =====
 
   const keywordIds = new Set();
 
   keywords.forEach(({ file, data }) => {
+    const filename = file.replace(".md", "");
+
+    validateSchema(data, KEYWORD_SCHEMA, file, locale);
+
     assert(data.id, `[${locale}] ${file} missing keyword id`);
     assert(data.title, `[${locale}] ${file} missing keyword title`);
+    assert(data.type, `[${locale}] ${file} missing keyword type`);
+
+    assert(
+      VALID_KEYWORD_TYPES.includes(data.type),
+      `[${locale}] ${file} invalid keyword type: ${data.type}`,
+    );
+
+    if (data.has_parameter) {
+      assert(data.parameter, `[${locale}] ${file} missing parameter`);
+    } else {
+      assert(!data.parameter, `[${locale}] ${file} should not have parameter`);
+    }
+
+    assert(isKebabCase(data.id), `[${locale}] ${file} id must be kebab-case`);
+
+    assert(data.id === filename, `[${locale}] ${file} filename must match id`);
+
+    if (keywordIds.has(data.id)) {
+      assert(false, `[${locale}] duplicate keyword id: ${data.id}`);
+    }
 
     keywordIds.add(data.id);
   });
@@ -82,45 +208,50 @@ function validateLocale(locale) {
 
   const allyIds = new Set();
 
-  allies.forEach(({ file, data }) => {
+  allies.forEach(({ file, data, content }) => {
+    const filename = file.replace(".md", "");
+
+    validateSchema(data, ALLY_SCHEMA, file, locale);
+
     assert(data.id, `[${locale}] ${file} missing id`);
     assert(data.name, `[${locale}] ${file} missing name`);
-    assert(data.role, `[${locale}] ${file} missing role`);
     assert(data.ancestry, `[${locale}] ${file} missing ancestry`);
+    assert(data.role, `[${locale}] ${file} missing role`);
     assert(data.community, `[${locale}] ${file} missing community`);
 
-    // duplicate id
+    const title = extractTitle(content);
+
+    assert(title, `[${locale}] ${file} missing H1`);
+    assert(title === data.name, `[${locale}] ${file} title mismatch`);
+
+    assert(isKebabCase(data.id), `[${locale}] ${file} id must be kebab-case`);
+
+    assert(data.id === filename, `[${locale}] ${file} filename must match id`);
+
     if (allyIds.has(data.id)) {
       assert(false, `[${locale}] duplicate id: ${data.id}`);
     }
+
     allyIds.add(data.id);
 
-    // ===== STRUCTURE RULES =====
-
-    // community MUST be single
+    // STRUCTURE
     assert(
       !Array.isArray(data.community),
-      `[${locale}] ${file} community must be a single value`,
+      `[${locale}] ${file} community must be single`,
     );
 
-    // ===== DICTIONARY VALIDATION =====
-
+    // DICTIONARY
     validateList(data.ancestry, ancestries, "ancestry", file, locale);
-
     validateList(data.role, roles, "role", file, locale);
 
     assert(
       communities.has(data.community),
-      `[${locale}] ${file} has invalid community: ${data.community}`,
+      `[${locale}] ${file} invalid community`,
     );
 
-    // ===== KEYWORDS =====
-
+    // KEYWORDS
     (data.keywords || []).forEach((k) => {
-      assert(
-        keywordIds.has(k),
-        `[${locale}] ${file} uses unknown keyword: ${k}`,
-      );
+      assert(keywordIds.has(k), `[${locale}] ${file} unknown keyword: ${k}`);
     });
   });
 
@@ -133,7 +264,7 @@ function validateLocale(locale) {
   };
 }
 
-// ===== CROSS-LOCALE VALIDATION =====
+// ===== CROSS LOCALE =====
 
 function validateCrossLocale(results) {
   const base = results[BASE_LOCALE];
@@ -141,70 +272,23 @@ function validateCrossLocale(results) {
   Object.entries(results).forEach(([locale, data]) => {
     if (locale === BASE_LOCALE) return;
 
-    // ===== ALLIES =====
+    ["allies", "keywords", "ancestries", "communities", "roles"].forEach(
+      (type) => {
+        base[type].forEach((id) => {
+          assert(
+            data[type].has(id),
+            `[i18n] Missing ${type} in ${locale}: ${id}`,
+          );
+        });
 
-    base.allies.forEach((id) => {
-      assert(data.allies.has(id), `[i18n] Missing ally in ${locale}: ${id}`);
-    });
-
-    data.allies.forEach((id) => {
-      assert(base.allies.has(id), `[i18n] Extra ally in ${locale}: ${id}`);
-    });
-
-    // ===== KEYWORDS =====
-
-    base.keywords.forEach((id) => {
-      assert(
-        data.keywords.has(id),
-        `[i18n] Missing keyword in ${locale}: ${id}`,
-      );
-    });
-
-    data.keywords.forEach((id) => {
-      assert(base.keywords.has(id), `[i18n] Extra keyword in ${locale}: ${id}`);
-    });
-
-    // ===== ANCESTRIES =====
-
-    base.ancestries.forEach((id) => {
-      assert(
-        data.ancestries.has(id),
-        `[i18n] Missing ancestry in ${locale}: ${id}`,
-      );
-    });
-
-    data.ancestries.forEach((id) => {
-      assert(
-        base.ancestries.has(id),
-        `[i18n] Extra ancestry in ${locale}: ${id}`,
-      );
-    });
-
-    // ===== COMMUNITIES =====
-
-    base.communities.forEach((id) => {
-      assert(
-        data.communities.has(id),
-        `[i18n] Missing community in ${locale}: ${id}`,
-      );
-    });
-
-    data.communities.forEach((id) => {
-      assert(
-        base.communities.has(id),
-        `[i18n] Extra community in ${locale}: ${id}`,
-      );
-    });
-
-    // ===== ROLES =====
-
-    base.roles.forEach((id) => {
-      assert(data.roles.has(id), `[i18n] Missing role in ${locale}: ${id}`);
-    });
-
-    data.roles.forEach((id) => {
-      assert(base.roles.has(id), `[i18n] Extra role in ${locale}: ${id}`);
-    });
+        data[type].forEach((id) => {
+          assert(
+            base[type].has(id),
+            `[i18n] Extra ${type} in ${locale}: ${id}`,
+          );
+        });
+      },
+    );
   });
 }
 

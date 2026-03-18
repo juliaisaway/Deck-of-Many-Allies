@@ -403,7 +403,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Saheya of Kalyr
 
-#### Halfling • Wildborne • Spiritist
+#### Halfling • Duneborne • Spiritist
 
 > A maker of talismans, she protects those around her with magic and near-maternal care.
 
@@ -453,7 +453,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Yakov Kargan
 
-#### Orc • Wildborne • Summoner
+#### Orc • Duneborne • Summoner
 
 > He bends the earth to his will, making his allies harder to bring down.
 

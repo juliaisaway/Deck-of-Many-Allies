@@ -5,6 +5,8 @@ title: Keyword Name           # localized name
 type: trigger                 # trigger | resource | state | scaling | passive
 has_parameter: false          # true if uses a variable (X)
 parameter: null               # use only if has_parameter = true
+
+author: your-name
 ---
 
 > Trigger or effect description. Explain clearly when this keyword generates or uses markers.

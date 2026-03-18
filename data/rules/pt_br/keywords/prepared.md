@@ -1,7 +1,7 @@
 ---
 id: prepared
 title: Preparado
-type: resource
+type: passive
 has_parameter: true
 parameter: starting_tokens
 ---
