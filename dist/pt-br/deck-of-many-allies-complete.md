@@ -85,7 +85,7 @@ Algumas cartas podem alterar esse limite. Quando isso acontecer, a própria cart
 
 ### Dano e Fadiga
 
-Por padrão em Daggerheart, aliados não possuem ficha própria, nem Pontos de Vida ou Pontos de Fadiga. Eles representam suporte narrativo e mecânico aos personagens jogadores.
+Por padrão em uma mesa de Daggerheart, aliados não possuem ficha própria, nem Pontos de Vida ou Pontos de Fadiga. Eles representam suporte narrativo e mecânico aos personagens jogadores.
 
 Ainda assim, aliados não são imunes a perigos. Eles podem se ferir gravemente ou até mesmo morrer, conforme a ficção da cena.
 
@@ -151,7 +151,7 @@ Aliados Oportunistas sabem tirar vantagem de erros e distrações. Quando um ata
 
 ### Preparado
 
-> Este aliado começa com X marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+> Este aliado começa com {starting_tokens} marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
 Aliados Preparados entram em cena com recursos já prontos para uso. Esses marcadores representam planejamento, suprimentos ou energia acumulada antes do encontro.
 
@@ -201,7 +201,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Andrey de Gèovan
 
-#### Humano - Fora da Lei - Caçador
+#### Humano • Fora da Lei • Caçador
 
 > Integrante de uma ordem oculta, dedica-se a eliminar ameaças que não deveriam existir.
 
@@ -215,7 +215,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Bernô Kyrellan
 
-#### Canin - Nômade - Comerciante
+#### Canin • Nômade • Comerciante
 
 > Mercador sempre em busca de oportunidades. Ele fala rápido, sorri muito e desaparece ao sinal de perigo.
 
@@ -231,7 +231,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Callum O'Mara
 
-#### Firbolg - Campestre - Fazendeiro
+#### Firbolg • Campestre • Fazendeiro
 
 > Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
@@ -243,9 +243,9 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
-### Coiltan Ganzorig
+### Coltan Ganzorig
 
-#### Fauno - Montanhês - Rebelde
+#### Fauno • Montanhês • Rebelde
 
 > De mãos calejadas e espírito inflamado, luta tanto por sustento quanto por quem ama.
 
@@ -259,7 +259,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Damir e Ched
 
-#### Fauno - Montanhês - Mineirador
+#### Fauno • Montanhês • Mineirador
 
 > Jovens trabalhadores carregando suas picaretas pesadas para quebrar pedras... ou monstros.
 
@@ -271,7 +271,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Danièlle Mallet
 
-#### Gnomo - Erudita - Mago
+#### Gnomo • Erudita • Mago
 
 > Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 
@@ -285,7 +285,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Elbek Bataa
 
-#### Drakona - Renascido - Batedor
+#### Drakona • Renascido • Batedor
 
 > Com um olhar atento e poucas palavras, transforma erros em segundas chances.
 
@@ -297,7 +297,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Elizabeth Ironsong
 
-#### Humano - Erudita - Cronista
+#### Humano • Erudita • Cronista
 
 > Jovem pesquisadora, dedicada a registrar as histórias do mundo sob o olhar de quem as vive.
 
@@ -309,7 +309,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Fionna MacTine
 
-#### Fada - Disciplinado - Feiticeiro
+#### Fada • Disciplinado • Feiticeiro
 
 > Feiticeira piromante, cujo temperamento acende chamas que ela nem sempre consegue conter.
 
@@ -321,7 +321,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Gilbert de Balzath
 
-#### Elfo - Nômade - Pistoleiro
+#### Elfo • Nômade • Pistoleiro
 
 > Andarilho de origens incertas, sempre pronto com sua arma de múltiplos disparos.
 
@@ -335,7 +335,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Kapu, o Portador
 
-#### Galapa - Campestre - Guardião
+#### Galapa • Campestre • Guardião
 
 > Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
 
@@ -347,7 +347,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Karl Bouldervein
 
-#### Anão - Subterrâneo - Caçador
+#### Anão • Subterrâneo • Caçador
 
 > Veterano das encostas, acredita que um bom disparo resolve o que palavras não conseguem.
 
@@ -361,7 +361,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Lukas Bifurson
 
-#### Infernis - Bélico - Guardião
+#### Infernis • Bélico • Guardião
 
 > Um velho estrategista, cuja sabedoria foi forjada tanto na guerra quanto nos caminhos que percorreu.
 
@@ -375,9 +375,9 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
-### Lyra Bonciel Negraluna
+### Lyra Negraluna
 
-#### Elfo - Aristocrático - Oráculo
+#### Elfo / Humano • Aristocrático • Oráculo
 
 > Herdeira de uma linhagem mística, vive interpretando o destino nas cartas de quem cruza seu caminho.
 
@@ -391,7 +391,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Quillian Shadowmoon
 
-#### Símio - Aristocrático - Bardo
+#### Símio • Aristocrático • Bardo
 
 > Bardo viajante de renome, leva sua música a todos os cantos por onde passa.
 
@@ -401,9 +401,9 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
-### Saheera de Kalil
+### Saheya de Kalyr
 
-#### Pequenino - Silvestre - Xamã
+#### Pequenino • Silvestre • Espiritista
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 
@@ -415,7 +415,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Seth das Dunas
 
-#### Katari - Nômade - Batedor
+#### Katari • Nômade • Batedor
 
 > Errante das terras áridas, aprendeu que sobreviver é sempre a melhor vitória.
 
@@ -427,7 +427,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Sovann Rai
 
-#### Quacho - Disciplinado - Clérigo
+#### Quacho • Disciplinado • Clérigo
 
 > Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
 
@@ -437,23 +437,23 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
-### Tamim Paracelsos
+### Tamir Paracelion
 
-#### Pequenino - Marítimo - Alquimista
+#### Pequenino • Marítimo • Alquimista
 
 > Excêntrico alquimista, ele afirma estar aperfeiçoando “a fórmula definitiva da combustão controlada”.
 
 **Inspirado:** Sempre que um aliado rolar com Esperança em sua Dualidade, coloque 1 marcador nesta carta.
 
-**Bomba Alquímica:** Gaste 3 marcadores para fazer Tamim lançar um explosivo em um alvo em alcance distante, dando 1d20+3 de dano físico.
+**Bomba Alquímica:** Gaste 3 marcadores para fazer Tamir lançar um explosivo em um alvo em alcance distante, dando 1d20+3 de dano físico.
 
-**Bebida Refrescante:** Gaste 3 marcadores para fazer Tamim recuperar 1 Ponto de Vida de um aliado em alcance corpo a corpo.
+**Bebida Refrescante:** Gaste 3 marcadores para fazer Tamir recuperar 1 Ponto de Vida de um aliado em alcance corpo a corpo.
 
 ---
 
 ### Yakov Kargan
 
-#### Orc - Silvestre - Invocador
+#### Orc • Silvestre • Invocador
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

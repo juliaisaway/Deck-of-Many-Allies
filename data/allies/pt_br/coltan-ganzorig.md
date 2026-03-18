@@ -1,6 +1,6 @@
 ---
 id: coltan-ganzorig
-name: Coiltan Ganzorig
+name: Coltan Ganzorig
 
 ancestry: faun
 community: ridgeborne

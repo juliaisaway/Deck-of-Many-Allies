@@ -1,4 +1,0 @@
----
-id: shaman
-name: Xamã
----

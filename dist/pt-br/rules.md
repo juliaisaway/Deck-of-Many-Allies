@@ -85,7 +85,7 @@ Algumas cartas podem alterar esse limite. Quando isso acontecer, a própria cart
 
 ### Dano e Fadiga
 
-Por padrão em Daggerheart, aliados não possuem ficha própria, nem Pontos de Vida ou Pontos de Fadiga. Eles representam suporte narrativo e mecânico aos personagens jogadores.
+Por padrão em uma mesa de Daggerheart, aliados não possuem ficha própria, nem Pontos de Vida ou Pontos de Fadiga. Eles representam suporte narrativo e mecânico aos personagens jogadores.
 
 Ainda assim, aliados não são imunes a perigos. Eles podem se ferir gravemente ou até mesmo morrer, conforme a ficção da cena.
 
@@ -151,7 +151,7 @@ Aliados Oportunistas sabem tirar vantagem de erros e distrações. Quando um ata
 
 ### Preparado
 
-> Este aliado começa com X marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+> Este aliado começa com {starting_tokens} marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
 Aliados Preparados entram em cena com recursos já prontos para uso. Esses marcadores representam planejamento, suprimentos ou energia acumulada antes do encontro.
 

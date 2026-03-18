@@ -1,27 +1,36 @@
 {
   "name": "deck-of-many-allies",
   "version": "1.0.0",
-  "description": "A modular ally system for Daggerheart.",
+  "description": "A modular ally system for Daggerheart games.",
   "type": "module",
-  "main": "index.js",
+  "private": false,
   "scripts": {
-    "build": "node scripts/build.js",
     "validate": "node scripts/validate.js",
-    "test": "npm run validate && npm run build"
+    "build": "npm run validate && node scripts/build.js",
+    "build:only": "node scripts/build.js",
+    "validate:only": "node scripts/validate.js",
+    "clean": "rm -rf dist",
+    "dev": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juliaisaway/Deck-of-Many-Allies.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "rpg",
+    "daggerheart",
+    "ttrpg",
+    "game-design",
+    "supplement",
+    "content-system"
+  ],
+  "author": "Júlia Alberto",
+  "license": "CC-BY-4.0",
   "bugs": {
     "url": "https://github.com/juliaisaway/Deck-of-Many-Allies/issues"
   },
   "homepage": "https://github.com/juliaisaway/Deck-of-Many-Allies#readme",
   "dependencies": {
-    "fs-extra": "^11.3.4",
     "gray-matter": "^4.0.3"
   }
 }

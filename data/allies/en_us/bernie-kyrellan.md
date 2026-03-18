@@ -1,0 +1,23 @@
+---
+id: bernie-kyrellan
+name: Bernie Kyrellan
+
+ancestry: canin
+community: wanderborne
+role: merchant
+
+keywords: [prepared]
+tags: [support, utility, heal, fatigue, armor]
+---
+
+# Bernie Kyrellan
+
+> A merchant always chasing opportunity. He talks fast, smiles often, and disappears at the first sign of danger.
+
+**Prepared (2):** This card begins with 2 tokens and cannot gain additional tokens until the next rest.
+
+**Ready for Business:** Spend 1 token for Bernie to grant one of the following options.
+
+• An ally clears 1 Armor Slot.  
+• An ally clears 1 Hit Point.  
+• An ally clears 1 Stress.

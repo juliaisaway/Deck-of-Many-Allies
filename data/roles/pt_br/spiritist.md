@@ -1,0 +1,4 @@
+---
+id: spiritist
+name: Espiritista
+---

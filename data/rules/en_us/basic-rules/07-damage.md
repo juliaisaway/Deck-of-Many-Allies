@@ -4,7 +4,7 @@ title: Damage and Stress
 order: 8
 ---
 
-By default in Daggerheart, allies do not have their own stat blocks, Hit Points, or Stress. They represent narrative and mechanical support for the player characters.
+By default in Daggerheart games, allies do not have their own stat blocks, Hit Points, or Stress. They represent narrative and mechanical support for the player characters.
 
 Even so, allies are not immune to danger. They can be seriously harmed or even die, depending on the fiction of the scene.
 

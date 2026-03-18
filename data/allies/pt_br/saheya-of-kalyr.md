@@ -1,16 +1,16 @@
 ---
-id: saheera-of-kalil
-name: Saheera de Kalil
+id: saheya-of-kalyr
+name: Saheya de Kalyr
 
 ancestry: halfling
 community: duneborne
-role: shaman
+role: spiritist
 
 keywords: [foresee]
 tags: [support, defense, prevention]
 ---
 
-# Saheera de Kalil
+# Saheya de Kalyr
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 

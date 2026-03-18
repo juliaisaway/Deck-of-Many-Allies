@@ -1,8 +1,8 @@
 ---
 id: lyra-darkmoon
-name: Lyra Bonciel Negraluna
+name: Lyra Negraluna
 
-ancestry: elf
+ancestry: [elf, human]
 community: highborne
 role: oracle
 
@@ -10,7 +10,7 @@ keywords: [foresee]
 tags: [support, damage, buff]
 ---
 
-# Lyra Bonciel-Negraluna
+# Lyra Negraluna
 
 > Herdeira de uma linhagem mística, vive interpretando o destino nas cartas de quem cruza seu caminho.
 

@@ -63,9 +63,22 @@ function loadDictionary(dir) {
   return dict;
 }
 
-const ancestriesDict = loadDictionary("data/ancestries/pt_br");
-const communitiesDict = loadDictionary("data/communities/pt_br");
-const rolesDict = loadDictionary("data/roles/pt_br");
+// ===== HELPERS =====
+
+function resolveList(value, dict) {
+  if (Array.isArray(value)) {
+    return value.map((v) => dict[v] || v).join(" / ");
+  }
+  return dict[value] || value;
+}
+
+function resolveSingle(value, dict, fieldName, name) {
+  if (Array.isArray(value)) {
+    console.warn(`⚠️ ${name} has multiple ${fieldName}, expected single value`);
+    return value.map((v) => dict[v] || v).join(" / ");
+  }
+  return dict[value] || value;
+}
 
 // ===== RENDERERS =====
 
@@ -79,83 +92,134 @@ function renderSection(title, items) {
   return `## ${title}\n\n${content.join("\n\n---\n\n")}`;
 }
 
-function renderAllies(allies) {
-  const content = allies.map((a) => {
-    const bodyWithoutTitle = a.content.replace(/^# .*\n?/, "").trim();
+// ===== BUILD FUNCTION =====
 
-    const body = shiftHeadings(bodyWithoutTitle, 2);
+function build(locale) {
+  const basePath = "data";
 
-    const name = `### ${a.name}`;
-    const ancestry = ancestriesDict[a.ancestry] || a.ancestry;
-    const community = communitiesDict[a.community] || a.community;
-    const role = rolesDict[a.role] || a.role;
+  // ===== LOAD DATA =====
 
-    const meta = `#### ${ancestry} - ${community} - ${role}`;
+  const basicRules = loadFiles(`${basePath}/rules/${locale}/basic-rules`).sort(
+    sortByOrder,
+  );
+  const optionalRules = loadFiles(
+    `${basePath}/rules/${locale}/optional-rules`,
+  ).sort(sortByOrder);
+  const keywords = loadFiles(`${basePath}/rules/${locale}/keywords`).sort(
+    sortByTitle,
+  );
+  const allies = loadFiles(`${basePath}/allies/${locale}`).sort((a, b) =>
+    a.name.localeCompare(b.name),
+  );
 
-    return `${name}\n\n${meta}\n\n${body}`;
-  });
+  // ===== DICTIONARIES =====
 
-  return `## Aliados\n\n${content.join("\n\n---\n\n")}`;
+  const ancestriesDict = loadDictionary(`${basePath}/ancestries/${locale}`);
+  const communitiesDict = loadDictionary(`${basePath}/communities/${locale}`);
+  const rolesDict = loadDictionary(`${basePath}/roles/${locale}`);
+
+  // ===== LABELS =====
+
+  const labels = {
+    pt_br: {
+      lang: "PT-BR",
+      basic: "Regras Básicas",
+      optional: "Regras Opcionais",
+      keywords: "Keywords",
+      allies: "Aliados",
+      rulesTitle: "Regras",
+    },
+    en_us: {
+      lang: "EN-US",
+      basic: "Basic Rules",
+      optional: "Optional Rules",
+      keywords: "Keywords",
+      allies: "Allies",
+      rulesTitle: "Rules",
+    },
+  };
+
+  const t = labels[locale];
+
+  // ===== RENDER ALLIES =====
+
+  function renderAllies(allies) {
+    const content = allies.map((a) => {
+      const bodyWithoutTitle = a.content.replace(/^# .*\n?/, "").trim();
+      const body = shiftHeadings(bodyWithoutTitle, 2);
+
+      const name = `### ${a.name}`;
+
+      const ancestry = resolveList(a.ancestry, ancestriesDict);
+      const role = resolveList(a.role, rolesDict);
+
+      const community = resolveSingle(
+        a.community,
+        communitiesDict,
+        "community",
+        a.name,
+      );
+
+      // ✨ NOVO FORMATO
+      const meta = `#### ${ancestry} • ${community} • ${role}`;
+
+      return `${name}\n\n${meta}\n\n${body}`;
+    });
+
+    return `## ${t.allies}\n\n${content.join("\n\n---\n\n")}`;
+  }
+
+  // ===== BUILD CONTENT =====
+
+  const fullBuild = `# Deck of Many Allies (${t.lang})
+
+${renderSection(t.basic, basicRules)}
+
+---
+
+${renderSection(t.optional, optionalRules)}
+
+---
+
+${renderSection(t.keywords, keywords)}
+
+---
+
+${renderAllies(allies)}
+`;
+
+  const rulesBuild = `# Deck of Many Allies — ${t.rulesTitle} (${t.lang})
+
+${renderSection(t.basic, basicRules)}
+
+---
+
+${renderSection(t.optional, optionalRules)}
+
+---
+
+${renderSection(t.keywords, keywords)}
+`;
+
+  const alliesBuild = `# Deck of Many Allies — ${t.allies} (${t.lang})
+
+${renderAllies(allies)}
+`;
+
+  // ===== WRITE =====
+
+  const outputDir = `dist/${locale.replace("_", "-")}`;
+
+  fs.mkdirSync(outputDir, { recursive: true });
+
+  fs.writeFileSync(`${outputDir}/deck-of-many-allies-complete.md`, fullBuild);
+  fs.writeFileSync(`${outputDir}/rules.md`, rulesBuild);
+  fs.writeFileSync(`${outputDir}/allies.md`, alliesBuild);
 }
 
-// ===== LOAD DATA =====
+// ===== EXECUTE =====
 
-const basicRules = loadFiles("data/rules/pt_br/basic-rules").sort(sortByOrder);
-const optionalRules = loadFiles("data/rules/pt_br/optional-rules").sort(
-  sortByOrder,
-);
-const keywords = loadFiles("data/rules/pt_br/keywords").sort(sortByTitle);
-const allies = loadFiles("data/allies/pt_br").sort((a, b) =>
-  a.name.localeCompare(b.name),
-);
+build("pt_br");
+build("en_us");
 
-// ===== BUILD CONTENT =====
-
-// FULL BUILD
-const fullBuild = `# Deck of Many Allies (PT-BR)
-
-${renderSection("Regras Básicas", basicRules)}
-
----
-
-${renderSection("Regras Opcionais", optionalRules)}
-
----
-
-${renderSection("Keywords", keywords)}
-
----
-
-${renderAllies(allies)}
-`;
-
-// RULES ONLY
-const rulesBuild = `# Deck of Many Allies — Regras (PT-BR)
-
-${renderSection("Regras Básicas", basicRules)}
-
----
-
-${renderSection("Regras Opcionais", optionalRules)}
-
----
-
-${renderSection("Keywords", keywords)}
-`;
-
-// ALLIES ONLY
-const alliesBuild = `# Deck of Many Allies — Aliados (PT-BR)
-
-${renderAllies(allies)}
-`;
-
-// ===== WRITE =====
-
-fs.mkdirSync("dist", { recursive: true });
-fs.mkdirSync("dist/pt-br", { recursive: true });
-
-fs.writeFileSync("dist/pt-br/deck-of-many-allies-complete.md", fullBuild);
-fs.writeFileSync("dist/pt-br/rules.md", rulesBuild);
-fs.writeFileSync("dist/pt-br/allies.md", alliesBuild);
-
-console.log("✅ Builds gerados com sucesso!");
+console.log("✅ Builds generated!");
