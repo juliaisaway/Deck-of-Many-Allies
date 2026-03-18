@@ -1,11 +1,8 @@
 ---
 id: channel
-name: Canalizar
+title: Canalizar
 type: state
-has_parameter: false
 ---
-
-# Canalizar
 
 > Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.
 

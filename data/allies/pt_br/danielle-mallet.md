@@ -7,7 +7,7 @@ community: loreborne
 role: wizard
 
 keywords: [channel]
-tags: [control, area, ranged, tarmundria]
+tags: [control, area, ranged]
 ---
 
 # Danièlle Mallet

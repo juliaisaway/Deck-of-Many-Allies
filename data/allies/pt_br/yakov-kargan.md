@@ -7,7 +7,7 @@ community: duneborne
 role: summoner
 
 keywords: [pressured]
-tags: [support, defense, elrian]
+tags: [support, defense]
 ---
 
 # Yakov Kargan

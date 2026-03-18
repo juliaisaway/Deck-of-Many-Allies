@@ -1,11 +1,8 @@
 ---
 id: pressured
-name: Pressionado
+title: Pressionado
 type: trigger
-has_parameter: false
 ---
-
-# Pressionado
 
 > Sempre que um aliado rolar com Medo em sua Dualidade, coloque 1 marcador nesta carta.
 

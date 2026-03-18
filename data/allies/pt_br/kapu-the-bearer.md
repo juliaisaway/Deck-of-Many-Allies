@@ -7,7 +7,7 @@ community: heartborne
 role: guardian
 
 keywords: [prepared]
-tags: [support, defense, stress, tarmundria]
+tags: [support, defense, stress]
 ---
 
 # Kapu, o Portador

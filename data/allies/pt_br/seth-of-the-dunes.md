@@ -7,7 +7,7 @@ community: wanderborne
 role: survivor
 
 keywords: [pressured]
-tags: [support, defense, evasion, elrian]
+tags: [support, defense, evasion]
 ---
 
 # Seth das Dunas

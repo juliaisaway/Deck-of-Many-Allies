@@ -7,7 +7,7 @@ community: ridgeborne
 role: miner
 
 keywords: [opportunist]
-tags: [damage, melee, aredhel]
+tags: [damage, melee]
 ---
 
 # Damir e Ched

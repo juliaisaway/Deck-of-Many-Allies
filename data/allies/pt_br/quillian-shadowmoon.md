@@ -7,7 +7,7 @@ community: highborne
 role: bard
 
 keywords: [prepared]
-tags: [control, area, debuff, jannengard]
+tags: [control, area, debuff]
 ---
 
 # Quillian Shadowmoon

@@ -1,11 +1,8 @@
 ---
 id: inspired
-name: Inspirado
+title: Inspirado
 type: trigger
-has_parameter: false
 ---
-
-# Inspirado
 
 > Sempre que um aliado rolar com Esperança em sua Dualidade, coloque 1 marcador nesta carta.
 

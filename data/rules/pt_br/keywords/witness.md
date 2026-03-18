@@ -1,12 +1,10 @@
 ---
 id: witness
-name: Testemunhar
+title: Testemunhar
 type: scaling
 has_parameter: true
 parameter: threshold
 ---
-
-# Testemunhar (X)
 
 > Sempre que um aliado marcar X ou mais Pontos de Vida, coloque 1 marcador nesta carta.
 

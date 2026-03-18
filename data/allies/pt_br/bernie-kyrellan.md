@@ -7,7 +7,7 @@ community: wanderborne
 role: merchant
 
 keywords: [prepared]
-tags: [support, utility, heal, fatigue, armor, jannengard]
+tags: [support, utility, heal, fatigue, armor]
 ---
 
 # Bernô Kyrellan

@@ -7,7 +7,7 @@ community: reborne
 role: scout
 
 keywords: [prepared]
-tags: [support, reroll, utility, elrian]
+tags: [support, reroll, utility]
 ---
 
 # Elbek Bataa

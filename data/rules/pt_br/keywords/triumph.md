@@ -1,11 +1,8 @@
 ---
 id: triumph
-name: Triunfo
+title: Triunfo
 type: trigger
-has_parameter: false
 ---
-
-# Triunfo
 
 > Sempre que um adversário for derrotado, coloque 1 marcador nesta carta.
 

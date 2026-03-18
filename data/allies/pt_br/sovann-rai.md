@@ -7,7 +7,7 @@ community: orderborne
 role: cleric
 
 keywords: [witness]
-tags: [support, heal, fatigue, aredhel]
+tags: [support, heal, fatigue]
 ---
 
 # Sovann Rai

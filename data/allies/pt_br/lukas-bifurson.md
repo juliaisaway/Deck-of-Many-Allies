@@ -7,7 +7,7 @@ community: warborne
 role: strategist
 
 keywords: [prepared]
-tags: [support, buff, stress, damage, jannengard]
+tags: [support, buff, stress, damage]
 ---
 
 # Lukas Bifurson

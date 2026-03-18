@@ -7,7 +7,7 @@ community: wanderborne
 role: gunslinger
 
 keywords: [inspired]
-tags: [damage, ranged, tarmundria]
+tags: [damage, ranged]
 ---
 
 # Gilbert de Balzath

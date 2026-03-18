@@ -7,7 +7,7 @@ community: orderborne
 role: sorcerer
 
 keywords: [channel]
-tags: [damage, area, ranged, jannengard]
+tags: [damage, area, ranged]
 ---
 
 # Fionna MacTine

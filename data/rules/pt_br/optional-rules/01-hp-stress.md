@@ -1,5 +1,5 @@
 ---
-id: optional-hp-stress
+id: hp-stress
 title: Pontos de Vida e Fadiga
 order: 1
 optional: true

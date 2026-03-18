@@ -7,7 +7,7 @@ community: seaborne
 role: alchemist
 
 keywords: [inspired]
-tags: [damage, ranged, heal, elrian]
+tags: [damage, ranged, heal]
 ---
 
 # Tamim Paracelsos

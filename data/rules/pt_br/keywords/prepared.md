@@ -1,12 +1,10 @@
 ---
 id: prepared
-name: Preparado
+title: Preparado
 type: resource
 has_parameter: true
-parameter: threshold
+parameter: starting_tokens
 ---
-
-# Preparado (X)
 
 > Este aliado começa com X marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 

@@ -7,7 +7,7 @@ community: ridgeborne
 role: rebel
 
 keywords: [triumph]
-tags: [damage, melee, buff, aredhel]
+tags: [damage, melee, buff]
 ---
 
 # Coltan Ganzorig

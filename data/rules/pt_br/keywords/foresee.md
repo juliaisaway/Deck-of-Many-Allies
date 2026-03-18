@@ -1,11 +1,8 @@
 ---
 id: foresee
-name: Prever
+title: Prever
 type: trigger
-has_parameter: false
 ---
-
-# Prever
 
 > Sempre que um aliado usar uma Experiência em uma rolagem, coloque 1 marcador nesta carta.
 

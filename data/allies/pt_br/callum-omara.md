@@ -7,7 +7,7 @@ community: heartborne
 role: farmer
 
 keywords: [triumph]
-tags: [support, hope, buff, jannengard]
+tags: [support, hope, buff]
 ---
 
 # Callum O'Mara

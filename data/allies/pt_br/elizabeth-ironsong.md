@@ -7,7 +7,7 @@ community: loreborne
 role: scholar
 
 keywords: [witness]
-tags: [support, buff, advantage, jannengard]
+tags: [support, buff, advantage]
 ---
 
 # Elizabeth Ironsong

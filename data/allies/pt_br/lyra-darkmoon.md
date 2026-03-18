@@ -7,7 +7,7 @@ community: highborne
 role: oracle
 
 keywords: [foresee]
-tags: [support, damage, buff, tarmundria]
+tags: [support, damage, buff]
 ---
 
 # Lyra Bonciel-Negraluna

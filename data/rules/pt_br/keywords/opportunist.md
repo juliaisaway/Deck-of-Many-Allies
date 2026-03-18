@@ -1,11 +1,8 @@
 ---
 id: opportunist
-name: Oportunista
+title: Oportunista
 type: trigger
-has_parameter: false
 ---
-
-# Oportunista
 
 > Sempre que um aliado errar um ataque, coloque 1 marcador nesta carta.
 

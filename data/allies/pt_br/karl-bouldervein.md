@@ -7,7 +7,7 @@ community: underborne
 role: hunter
 
 keywords: [opportunist]
-tags: [control, area, melee, tarmundria]
+tags: [control, area, melee]
 ---
 
 # Karl Bouldervein

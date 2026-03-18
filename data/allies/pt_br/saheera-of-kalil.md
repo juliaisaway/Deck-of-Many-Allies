@@ -7,7 +7,7 @@ community: duneborne
 role: shaman
 
 keywords: [foresee]
-tags: [support, defense, prevention, elrian]
+tags: [support, defense, prevention]
 ---
 
 # Saheera de Kalil

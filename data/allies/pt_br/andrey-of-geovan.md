@@ -7,7 +7,7 @@ community: slyborne
 role: hunter
 
 keywords: [track]
-tags: [control, melee, pull, aredhel]
+tags: [control, melee, pull]
 ---
 
 # Andrey de Gèovan

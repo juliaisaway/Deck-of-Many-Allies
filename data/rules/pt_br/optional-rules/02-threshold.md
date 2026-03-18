@@ -1,5 +1,5 @@
 ---
-id: optional-threshold
+id: threshold
 title: Limiares de Dano
 order: 2
 optional: true
