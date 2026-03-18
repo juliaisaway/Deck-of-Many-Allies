@@ -1,3 +1,6 @@
+![Build](https://img.shields.io/badge/build-passing-green)
+![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
+
 # Deck of Many Allies
 
 A modular ally system for Daggerheart games.
@@ -82,6 +85,18 @@ You can:
 - Expand rules or keywords
 
 Please ensure all contributions follow the existing structure and pass validation.
+
+---
+
+## 🧩 Templates
+
+Use the templates in `/templates` when creating new content:
+
+- `ally.md`
+- `keyword.md`
+- `ancestry.md`
+- `community.md`
+- `role.md`
 
 ---
 
