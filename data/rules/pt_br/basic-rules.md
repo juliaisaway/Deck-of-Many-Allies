@@ -95,7 +95,7 @@ Cabe ao mestre decidir:
 
 ## Regras Opcionais
 
-As regras a seguir podem ser utilizadas para dar mais peso mecânico aos aliados em sua mesa.
+As regras a seguir podem ser utilizadas para dar mais peso mecânico aos aliados em sua mesa de RPG.
 
 ---
 
