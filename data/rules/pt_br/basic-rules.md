@@ -55,7 +55,7 @@ Marcadores podem ser representados por:
 - moedas
 - qualquer objeto simples disponível na mesa
 
-Uma carta de aliado começa cada **cena** com **0 marcadores**, exceto se possuir a habilidade **Preparado**.
+Uma carta de aliado começa cada **cena** com **0 marcadores**, exceto se possuir uma habilidade que contradiza.
 
 Ao final de cada **sessão**, remova todos os marcadores das cartas de aliado.
 
