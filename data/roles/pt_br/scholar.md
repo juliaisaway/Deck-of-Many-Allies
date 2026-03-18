@@ -1,0 +1,4 @@
+---
+id: scholar
+name: Cronista
+---

@@ -1,0 +1,4 @@
+---
+id: gunslinger
+name: Gunslinger
+---

@@ -4,7 +4,7 @@ name: Seth das Dunas
 
 ancestry: katari
 community: wanderborne
-role: survivor
+role: scout
 
 keywords: [pressured]
 tags: [support, defense, evasion]

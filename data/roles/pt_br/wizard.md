@@ -1,0 +1,4 @@
+---
+id: wizard
+name: Mago
+---

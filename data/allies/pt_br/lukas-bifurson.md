@@ -4,7 +4,7 @@ name: Lukas Bifurson
 
 ancestry: infernis
 community: warborne
-role: strategist
+role: guardian
 
 keywords: [prepared]
 tags: [support, buff, stress, damage]

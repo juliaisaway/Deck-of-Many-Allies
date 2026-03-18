@@ -6,7 +6,7 @@ A modular ally system for Daggerheart.
 
 - `/data/allies` → individual allies
 - `/data/rules` → rules & keywords
-- `/compiled` → full documents
+- `/dist` → full documents
 
 ## Languages
 

@@ -1,0 +1,4 @@
+---
+id: scout
+name: Batedor
+---

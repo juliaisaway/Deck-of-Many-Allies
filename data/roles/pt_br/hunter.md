@@ -1,0 +1,4 @@
+---
+id: hunter
+name: Caçador
+---

@@ -1,0 +1,4 @@
+---
+id: goblin
+name: Goblin
+---
