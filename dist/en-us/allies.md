@@ -136,6 +136,20 @@
 
 ---
 
+### Iruanê Anayru
+
+#### Fungril • Underborne • Scout
+
+> She knows every stone, every fungus, and every crawling thing that dwells within the depths of the caverns.
+
+**Track:** Whenever an ally deals damage to an adversary, place 1 token on this card.
+
+**Spore Veil:** Spend 3 tokens to make an ally within Close range Hidden temporarily.
+
+**Exposed Trail:** Spend 3 tokens to make an adversary within Close range Vulnerable temporarily.
+
+---
+
 ### Kapu, the Bearer
 
 #### Galapa • Wildborne • Guardian
@@ -189,6 +203,20 @@
 **Card of Fortune:** Spend 1 token for an ally to add 1d6 to a roll that uses an Experience.
 
 **Card of Ruin:** Spend 3 tokens to choose an adversary within Close range. The next successful attack against that adversary deals 2d8 additional damage.
+
+---
+
+### Null Veyron
+
+#### Clank • Orderborne • Hunter
+
+> Created by mages, it learned their tactics and now specializes in silencing them.
+
+**Foresee:** Whenever an ally uses an Experience, place 1 token on this card.
+
+**Blind Spot:** Spend 1 token to make an ally within Close range Hidden until their next attack.
+
+**Arcane Interference:** Spend 3 tokens to make an adversary Suppressed temporarily. While Suppressed, the target cannot cast spells.
 
 ---
 

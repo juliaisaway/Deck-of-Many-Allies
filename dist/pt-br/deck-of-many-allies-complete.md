@@ -333,6 +333,20 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
+### Iruanê Anayru
+
+#### Fungril • Subterrâneo • Batedor
+
+> Ela conhece cada pedra, cada fungo e cada ser que rasteja nas profundezas das cavernas.
+
+**Rastrear:** Sempre que um aliado causar dano a um adversário, coloque 1 marcador nesta carta.
+
+**Véu de Esporos:** Gaste 3 marcadores para Iruanê deixar um aliado em alcance próximo Escondido temporariamente.
+
+**Rastro Exposto:** Gaste 3 marcadores para Iruanê deixar um oponente em alcance próximo Vulnerável temporariamente.
+
+---
+
 ### Kapu, o Portador
 
 #### Galapa • Silvestre • Guardião
@@ -386,6 +400,20 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 **Carta da Fortuna:** Gaste 1 marcador para um aliado somar 1d6 a uma rolagem que esteja usando uma Experiência.
 
 **Carta da Ruína:** Gaste 3 marcadores para escolher um adversário em alcance próximo. O próximo ataque bem-sucedido contra esse adversário causa 2d8 de dano adicional.
+
+---
+
+### Null Veyron
+
+#### Clank • Disciplinado • Caçador
+
+> Criado por magos, aprendeu suas táticas e hoje é expecialista em silenciá-los.
+
+**Prever:** Sempre que um aliado usar uma Experiência em uma rolagem, coloque 1 marcador nesta carta.
+
+**Ponto Cego:** Gaste 1 marcador para fazer Null deixar um aliado em alcance próximo Escondido até seu próximo ataque.
+
+**Interferência Arcana:** Gaste 3 marcadores para fazer Null deixar um adversário Suprimido temporariamente. Enquanto estiver Suprimido, o alvo não pode conjurar feitiços.
 
 ---
 
