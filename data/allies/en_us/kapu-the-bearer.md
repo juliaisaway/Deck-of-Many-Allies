@@ -3,7 +3,7 @@ id: kapu-the-bearer
 name: Kapu, the Bearer
 
 ancestry: galapa
-community: heartborne
+community: wildborne
 role: guardian
 
 keywords: [prepared]

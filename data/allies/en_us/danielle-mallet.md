@@ -2,7 +2,7 @@
 id: danielle-mallet
 name: Danièlle Mallet
 
-ancestry: gnome
+ancestry: goblin
 community: loreborne
 role: wizard
 

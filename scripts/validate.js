@@ -30,7 +30,7 @@ const KEYWORD_SCHEMA = [
   "type",
   "has_parameter",
   "parameter",
-  "author", // opcional
+  "author",
 ];
 
 const VALID_KEYWORD_TYPES = ["passive", "trigger", "active", "scaling"];
@@ -112,7 +112,6 @@ function validateDictionary(dir, label, locale, schema) {
     assert(data.id, `[${locale}] ${label}/${file} missing id`);
     assert(data.name, `[${locale}] ${label}/${file} missing name`);
 
-    // source (se existir no schema)
     if (schema.includes("source")) {
       assert(data.source, `[${locale}] ${label}/${file} missing source`);
 
@@ -121,8 +120,6 @@ function validateDictionary(dir, label, locale, schema) {
         `[${locale}] ${label}/${file} invalid source: ${data.source}`,
       );
     }
-
-    // author opcional → não valida
 
     assert(
       isKebabCase(data.id),

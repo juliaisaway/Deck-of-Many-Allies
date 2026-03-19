@@ -3,7 +3,7 @@ id: saheya-of-kalyr
 name: Saheya de Kalyr
 
 ancestry: halfling
-community: duneborne
+community: wildborne
 role: spiritist
 
 keywords: [foresee]

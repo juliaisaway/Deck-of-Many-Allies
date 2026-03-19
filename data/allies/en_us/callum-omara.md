@@ -3,7 +3,7 @@ id: callum-omara
 name: Callum O'Mara
 
 ancestry: firbolg
-community: heartborne
+community: ridgeborne
 role: farmer
 
 keywords: [triumph]

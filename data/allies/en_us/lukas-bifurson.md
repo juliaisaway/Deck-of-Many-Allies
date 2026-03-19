@@ -3,7 +3,7 @@ id: lukas-bifurson
 name: Lukas Bifurson
 
 ancestry: infernis
-community: warborne
+community: orderborne
 role: guardian
 
 keywords: [prepared]

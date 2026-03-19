@@ -34,7 +34,7 @@
 
 ### Callum O'Mara
 
-#### Firbolg • Heartborne • Farmer
+#### Firbolg • Ridgeborne • Farmer
 
 > A humble farmer, devoted to his land and to those who depend on it.
 
@@ -74,7 +74,7 @@
 
 ### Danièlle Mallet
 
-#### Gnome • Loreborne • Wizard
+#### Goblin • Loreborne • Wizard
 
 > A small student who used to fall asleep in class... until she realized it could be her greatest strength.
 
@@ -88,7 +88,7 @@
 
 ### Elbek Bataa
 
-#### Drakona • Reborne • Scout
+#### Drakona • Orderborne • Scout
 
 > With a sharp eye and few words, he turns mistakes into second chances.
 
@@ -138,7 +138,7 @@
 
 ### Kapu, the Bearer
 
-#### Galapa • Heartborne • Guardian
+#### Galapa • Wildborne • Guardian
 
 > A tireless wanderer who finds ways to ease the burdens his companions carry.
 
@@ -164,7 +164,7 @@
 
 ### Lukas Bifurson
 
-#### Infernis • Warborne • Guardian
+#### Infernis • Orderborne • Guardian
 
 > An old strategist whose wisdom was forged both in war and along the paths he has walked.
 
@@ -206,7 +206,7 @@
 
 ### Saheya of Kalyr
 
-#### Halfling • Duneborne • Spiritist
+#### Halfling • Wildborne • Spiritist
 
 > A maker of talismans, she protects those around her with magic and near-maternal care.
 

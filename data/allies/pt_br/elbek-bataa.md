@@ -3,7 +3,7 @@ id: elbek-bataa
 name: Elbek Bataa
 
 ancestry: drakona
-community: reborne
+community: orderborne
 role: scout
 
 keywords: [prepared]

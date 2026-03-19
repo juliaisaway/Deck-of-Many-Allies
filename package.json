@@ -8,9 +8,7 @@
     "validate": "node scripts/validate.js",
     "build": "npm run validate && node scripts/build.js",
     "build:only": "node scripts/build.js",
-    "validate:only": "node scripts/validate.js",
-    "clean": "rm -rf dist",
-    "dev": "npm run build"
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",

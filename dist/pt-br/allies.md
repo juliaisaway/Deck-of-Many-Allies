@@ -34,7 +34,7 @@
 
 ### Callum O'Mara
 
-#### Firbolg • Campestre • Fazendeiro
+#### Firbolg • Montanhês • Fazendeiro
 
 > Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
@@ -74,7 +74,7 @@
 
 ### Danièlle Mallet
 
-#### Gnomo • Erudita • Mago
+#### Goblin • Erudita • Mago
 
 > Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 
@@ -88,7 +88,7 @@
 
 ### Elbek Bataa
 
-#### Drakona • Renascido • Batedor
+#### Drakona • Disciplinado • Batedor
 
 > Com um olhar atento e poucas palavras, transforma erros em segundas chances.
 
@@ -138,7 +138,7 @@
 
 ### Kapu, o Portador
 
-#### Galapa • Campestre • Guardião
+#### Galapa • Silvestre • Guardião
 
 > Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
 
@@ -164,7 +164,7 @@
 
 ### Lukas Bifurson
 
-#### Infernis • Bélico • Guardião
+#### Infernis • Disciplinado • Guardião
 
 > Um velho estrategista, cuja sabedoria foi forjada tanto na guerra quanto nos caminhos que percorreu.
 
@@ -206,7 +206,7 @@
 
 ### Saheya de Kalyr
 
-#### Pequenino • Desértico • Espiritista
+#### Pequenino • Silvestre • Espiritista
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 

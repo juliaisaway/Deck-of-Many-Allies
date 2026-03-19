@@ -231,7 +231,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Callum O'Mara
 
-#### Firbolg • Heartborne • Farmer
+#### Firbolg • Ridgeborne • Farmer
 
 > A humble farmer, devoted to his land and to those who depend on it.
 
@@ -271,7 +271,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Danièlle Mallet
 
-#### Gnome • Loreborne • Wizard
+#### Goblin • Loreborne • Wizard
 
 > A small student who used to fall asleep in class... until she realized it could be her greatest strength.
 
@@ -285,7 +285,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Elbek Bataa
 
-#### Drakona • Reborne • Scout
+#### Drakona • Orderborne • Scout
 
 > With a sharp eye and few words, he turns mistakes into second chances.
 
@@ -335,7 +335,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Kapu, the Bearer
 
-#### Galapa • Heartborne • Guardian
+#### Galapa • Wildborne • Guardian
 
 > A tireless wanderer who finds ways to ease the burdens his companions carry.
 
@@ -361,7 +361,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Lukas Bifurson
 
-#### Infernis • Warborne • Guardian
+#### Infernis • Orderborne • Guardian
 
 > An old strategist whose wisdom was forged both in war and along the paths he has walked.
 
@@ -403,7 +403,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Saheya of Kalyr
 
-#### Halfling • Duneborne • Spiritist
+#### Halfling • Wildborne • Spiritist
 
 > A maker of talismans, she protects those around her with magic and near-maternal care.
 
