@@ -231,7 +231,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Callum O'Mara
 
-#### Firbolg • Montanhês • Mineirador
+#### Firbolg • Montanhês • Trabalhador
 
 > Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
@@ -245,7 +245,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Coltan Ganzorig
 
-#### Fauno • Montanhês • Mineirador / Rebelde
+#### Fauno • Montanhês • Trabalhador / Rebelde
 
 > De mãos calejadas e espírito inflamado, luta tanto por sustento quanto por quem ama.
 
@@ -259,7 +259,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Damir e Ched
 
-#### Fauno • Montanhês • Mineirador
+#### Fauno • Montanhês • Trabalhador
 
 > Jovens trabalhadores carregando suas picaretas pesadas para quebrar pedras... ou monstros.
 
@@ -297,7 +297,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Elizabeth Ironsong
 
-#### Humano • Erudita • Cronista
+#### Humano • Erudita • Estudioso
 
 > Jovem pesquisadora, dedicada a registrar as histórias do mundo sob o olhar de quem as vive.
 
@@ -495,7 +495,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Tharion Aegis
 
-#### Clank • Erudita • Cronista / Protetor
+#### Clank • Erudita • Estudioso / Protetor
 
 > Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
 
@@ -511,7 +511,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ### Vexlin Bell
 
-#### Goblin • Erudita • Cronista / Arcanist
+#### Goblin • Erudita • Estudioso / Arcanist
 
 > Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 

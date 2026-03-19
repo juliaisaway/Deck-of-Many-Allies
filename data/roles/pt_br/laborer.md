@@ -1,4 +1,4 @@
 ---
 id: laborer
-name: Mineirador
+name: Trabalhador
 ---

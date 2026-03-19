@@ -1,4 +1,4 @@
 ---
 id: scholar
-name: Cronista
+name: Estudioso
 ---
