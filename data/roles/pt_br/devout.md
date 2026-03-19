@@ -1,0 +1,4 @@
+---
+id: devout
+name: Devoto
+---

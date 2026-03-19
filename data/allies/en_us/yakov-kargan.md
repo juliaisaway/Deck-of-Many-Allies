@@ -3,8 +3,8 @@ id: yakov-kargan
 name: Yakov Kargan
 
 ancestry: orc
-community: duneborne
-role: summoner
+community: wildborne
+role: spiritist
 
 keywords: [pressured]
 tags: [support, defense]

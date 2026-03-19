@@ -1,4 +1,0 @@
----
-id: miner
-name: Miner
----

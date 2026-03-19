@@ -4,7 +4,7 @@ name: Bernie Kyrellan
 
 ancestry: canin
 community: wanderborne
-role: merchant
+role: [specialist, merchant]
 
 keywords: [prepared]
 tags: [support, utility, heal, fatigue, armor]

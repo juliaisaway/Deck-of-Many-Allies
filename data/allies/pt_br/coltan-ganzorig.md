@@ -4,7 +4,7 @@ name: Coltan Ganzorig
 
 ancestry: faun
 community: ridgeborne
-role: rebel
+role: [laborer, rebel]
 
 keywords: [triumph]
 tags: [damage, melee, buff]

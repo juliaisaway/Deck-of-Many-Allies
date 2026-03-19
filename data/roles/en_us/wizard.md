@@ -1,4 +1,0 @@
----
-id: wizard
-name: Wizard
----

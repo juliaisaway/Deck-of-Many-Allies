@@ -4,7 +4,7 @@ name: Fionna MacTine
 
 ancestry: faerie
 community: orderborne
-role: sorcerer
+role: arcanist
 
 keywords: [channel]
 tags: [damage, area, ranged]

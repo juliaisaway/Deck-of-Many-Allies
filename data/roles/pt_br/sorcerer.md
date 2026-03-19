@@ -1,4 +1,0 @@
----
-id: sorcerer
-name: Feiticeiro
----

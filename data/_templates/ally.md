@@ -4,7 +4,7 @@ name: Ally Name                # localized name
 
 ancestry: human                # string OR array: [human, elf]
 community: wanderborne         # ALWAYS single
-role: bard                     # string OR array: [bard, healer]
+role: performer                # string OR array: [performer, arcanist]
 
 keywords: [track]
 tags: [support, control]

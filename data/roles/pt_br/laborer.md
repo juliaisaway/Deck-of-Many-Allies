@@ -1,4 +1,4 @@
 ---
-id: miner
+id: laborer
 name: Mineirador
 ---

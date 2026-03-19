@@ -1,4 +1,0 @@
----
-id: cleric
-name: Clérigo
----

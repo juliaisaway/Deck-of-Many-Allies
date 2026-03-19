@@ -4,7 +4,7 @@ name: Quillian Shadowmoon
 
 ancestry: simiah
 community: highborne
-role: bard
+role: performer
 
 keywords: [prepared]
 tags: [control, area, debuff]

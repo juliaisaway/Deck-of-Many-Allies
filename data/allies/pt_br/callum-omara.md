@@ -4,7 +4,7 @@ name: Callum O'Mara
 
 ancestry: firbolg
 community: ridgeborne
-role: farmer
+role: laborer
 
 keywords: [triumph]
 tags: [support, hope, buff]

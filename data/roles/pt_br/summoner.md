@@ -1,4 +1,0 @@
----
-id: summoner
-name: Invocador
----

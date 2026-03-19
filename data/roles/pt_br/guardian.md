@@ -1,4 +1,0 @@
----
-id: guardian
-name: Guardião
----

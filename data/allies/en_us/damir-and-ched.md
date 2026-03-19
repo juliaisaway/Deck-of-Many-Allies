@@ -4,7 +4,7 @@ name: Damir e Ched
 
 ancestry: faun
 community: ridgeborne
-role: miner
+role: laborer
 
 keywords: [opportunist]
 tags: [damage, melee]

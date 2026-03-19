@@ -1,0 +1,4 @@
+---
+id: pirate
+name: Pirata
+---

@@ -1,4 +1,0 @@
----
-id: bard
-name: Bardo
----

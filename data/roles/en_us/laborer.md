@@ -1,0 +1,4 @@
+---
+id: laborer
+name: Laborer
+---

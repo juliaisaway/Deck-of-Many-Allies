@@ -1,4 +1,0 @@
----
-id: farmer
-name: Fazendeiro
----

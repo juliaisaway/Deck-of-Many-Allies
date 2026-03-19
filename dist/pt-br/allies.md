@@ -18,7 +18,7 @@
 
 ### Bernô Kyrellan
 
-#### Canin • Nômade • Comerciante
+#### Canin • Nômade • Especialista / Comerciante
 
 > Mercador sempre em busca de oportunidades. Ele fala rápido, sorri muito e desaparece ao sinal de perigo.
 
@@ -34,7 +34,7 @@
 
 ### Callum O'Mara
 
-#### Firbolg • Montanhês • Fazendeiro
+#### Firbolg • Montanhês • Mineirador
 
 > Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
@@ -48,7 +48,7 @@
 
 ### Coltan Ganzorig
 
-#### Fauno • Montanhês • Rebelde
+#### Fauno • Montanhês • Mineirador / Rebelde
 
 > De mãos calejadas e espírito inflamado, luta tanto por sustento quanto por quem ama.
 
@@ -72,17 +72,17 @@
 
 ---
 
-### Danièlle Mallet
+### Drogathar Kragson
 
-#### Goblin • Erudita • Mago
+#### Gigante • Marítimo • Bruto / Pirata
 
-> Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
+> Navegador dos mares, carrega a fúria das tempestades em suas veias.
 
-**Canalizar:** Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.
+**Inspirado:** Sempre que um aliado rolar com Esperança em sua Dualidade, coloque 1 marcador nesta carta.
 
-**Sonolência:** Gaste 2 marcadores para fazer Danièlle deixar um adversário em alcance muito próximo Adormecido até sofrer dano. Alvos adormecidos não podem se mexer nem atacar.
+**Maré de Ira:** Gaste 1 marcador para tornar um alvo em alcance corpo a corpo Enfurecido. Um alvo Enfurecido soma 1d6 a mais nas rolagens de dano, porém recebe uma penalidade de -2 na Evasão.
 
-**Sono em massa:** Gaste 6 marcadores para fazer Danièlle deixar 1d4 de adversários em alcance distante Adormecidos até sofrerem dano.
+**Olho da Tempestade:** Gaste 3 marcadores para amplificar a fúria de um alvo já Enfurecido em alcance próximo. O alvo passa a somar 1d10 a mais nas rolagens de dano e recebe uma penalidade de -4 na Evasão.
 
 ---
 
@@ -112,7 +112,7 @@
 
 ### Fionna MacTine
 
-#### Fada • Disciplinado • Feiticeiro
+#### Fada • Disciplinado • Arcanist
 
 > Feiticeira piromante, cujo temperamento acende chamas que ela nem sempre consegue conter.
 
@@ -152,7 +152,7 @@
 
 ### Kapu, o Portador
 
-#### Galapa • Silvestre • Guardião
+#### Galapa • Silvestre • Protetor
 
 > Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
 
@@ -164,7 +164,7 @@
 
 ### Karl Bouldervein
 
-#### Anão • Subterrâneo • Caçador
+#### Anão • Subterrâneo • Caçador / Pistoleiro
 
 > Veterano das encostas, acredita que um bom disparo resolve o que palavras não conseguem.
 
@@ -178,7 +178,7 @@
 
 ### Lukas Bifurson
 
-#### Infernis • Disciplinado • Guardião
+#### Infernis • Disciplinado • Protetor
 
 > Um velho estrategista, cuja sabedoria foi forjada tanto na guerra quanto nos caminhos que percorreu.
 
@@ -206,6 +206,20 @@
 
 ---
 
+### Nix Sablewing
+
+#### Fada • Fora da Lei • Canalha / Alquimista
+
+> Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades
+
+**Oportunista:** Toda vez que um aliado errar um ataque, coloque 1 marcador nesta carta.
+
+**Veneno Improvisado:** Gaste 1 marcador para Nix entregar um frasco de veneno a um aliado muito próximo. Um aliado pode utilizar esse veneno em um ataque corpo a corpo para aplicar 1d4 a mais de dano e deixar o alvo Vulnerável até que recupere 1 Ponto de Vida.
+
+**Cortina Ofuscante:** Gaste 3 marcadores para Nix jogar uma bomba de fumaça em alcance distante, criando uma área de alcance próximo ao redor do impacto. Todos os alvos dentro da área da fumaça sofrem desvantagem em seus próximos testes.
+
+---
+
 ### Null Veyron
 
 #### Clank • Disciplinado • Caçador
@@ -222,7 +236,7 @@
 
 ### Quillian Shadowmoon
 
-#### Símio • Aristocrático • Bardo
+#### Símio • Aristocrático • Artista
 
 > Bardo viajante de renome, leva sua música a todos os cantos por onde passa.
 
@@ -258,7 +272,7 @@
 
 ### Sovann Rai
 
-#### Quacho • Disciplinado • Clérigo
+#### Quacho • Disciplinado • Devoto
 
 > Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
 
@@ -270,7 +284,7 @@
 
 ### Tamir Paracelion
 
-#### Pequenino • Marítimo • Alquimista
+#### Pequenino • Marítimo • Especialista / Alquimista
 
 > Excêntrico alquimista, ele afirma estar aperfeiçoando “a fórmula definitiva da combustão controlada”.
 
@@ -282,9 +296,39 @@
 
 ---
 
+### Tharion Aegis
+
+#### Clank • Erudita • Cronista / Protetor
+
+> Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
+
+**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
+
+**Barreira Cinética:** Gaste 3 marcadores para tornar um aliado em alcance próximo resistente a dano físico até o próximo ataque.
+
+**Barreira Arcana:** Gaste 3 marcadores para tornar um aliado em alcance próximo resistente a dano mágico até o próximo ataque.
+
+Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efeito remove o anterior.
+
+---
+
+### Vexlin Bell
+
+#### Goblin • Erudita • Cronista / Arcanist
+
+> Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
+
+**Canalizar:** Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.
+
+**Sonolência:** Gaste 2 marcadores para fazer Vexlin deixar um adversário em alcance muito próximo Adormecido até sofrer dano. Alvos adormecidos não podem se mexer nem atacar.
+
+**Sono em massa:** Gaste 6 marcadores para fazer Vexlin deixar 1d4 de adversários em alcance distante Adormecidos até sofrerem dano.
+
+---
+
 ### Yakov Kargan
 
-#### Orc • Desértico • Invocador
+#### Orc • Silvestre • Espiritista
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

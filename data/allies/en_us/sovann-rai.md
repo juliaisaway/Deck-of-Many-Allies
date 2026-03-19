@@ -4,7 +4,7 @@ name: Sovann Rai
 
 ancestry: ribbet
 community: orderborne
-role: cleric
+role: devout
 
 keywords: [witness]
 tags: [support, heal, fatigue]

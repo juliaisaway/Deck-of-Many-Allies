@@ -215,7 +215,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Bernie Kyrellan
 
-#### Canin • Wanderborne • Merchant
+#### Canin • Wanderborne • Specialist / Merchant
 
 > A merchant always chasing opportunity. He talks fast, smiles often, and disappears at the first sign of danger.
 
@@ -231,7 +231,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Callum O'Mara
 
-#### Firbolg • Ridgeborne • Farmer
+#### Firbolg • Ridgeborne • Laborer
 
 > A humble farmer, devoted to his land and to those who depend on it.
 
@@ -245,7 +245,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Coltan Ganzorig
 
-#### Faun • Ridgeborne • Rebel
+#### Faun • Ridgeborne • Laborer / Rebel
 
 > With calloused hands and a fiery spirit, he fights both to survive and for those he loves.
 
@@ -259,7 +259,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Damir e Ched
 
-#### Faun • Ridgeborne • Miner
+#### Faun • Ridgeborne • Laborer
 
 > Young workers carrying heavy pickaxes to break stone... or monsters.
 
@@ -269,17 +269,17 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ---
 
-### Danièlle Mallet
+### Drogathar Kragson
 
-#### Goblin • Loreborne • Wizard
+#### Giant • Seaborne • Brute / Pirate
 
-> A small student who used to fall asleep in class... until she realized it could be her greatest strength.
+> A seafaring warrior who carries the fury of storms in his veins.
 
-**Channel:** Whenever this ally gains the spotlight, place 1 token on this card.
+**Inspired:** Whenever an ally rolls with Hope on their Duality Dice, place 1 token on this card.
 
-**Drowsiness:** Spend 2 tokens to have Danièlle make an adversary within Very Close range Asleep until they take damage. Asleep targets cannot move or attack.
+**Rising Fury:** Spend 1 token to make a target within Melee range Enraged. An Enraged target adds 1d6 to their damage rolls but takes a −2 penalty to Evasion.
 
-**Mass Sleep:** Spend 6 tokens to have Danièlle make 1d4 adversaries within Far range Asleep until they take damage.
+**Eye of the Storm:** Spend 3 tokens to amplify the fury of a target that is already Enraged within Close range. The target instead adds 1d10 to their damage rolls and takes a −4 penalty to Evasion.
 
 ---
 
@@ -309,7 +309,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Fionna MacTine
 
-#### Faerie • Orderborne • Sorcerer
+#### Faerie • Orderborne • Arcanist
 
 > A pyromancer sorcerer whose temper ignites flames she cannot always control.
 
@@ -349,7 +349,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Kapu, the Bearer
 
-#### Galapa • Wildborne • Guardian
+#### Galapa • Wildborne • Warden
 
 > A tireless wanderer who finds ways to ease the burdens his companions carry.
 
@@ -361,7 +361,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Karl Bouldervein
 
-#### Dwarf • Underborne • Hunter
+#### Dwarf • Underborne • Hunter / Gunslinger
 
 > A veteran of the slopes, he believes a good shot solves what words cannot.
 
@@ -375,7 +375,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Lukas Bifurson
 
-#### Infernis • Orderborne • Guardian
+#### Infernis • Orderborne • Warden
 
 > An old strategist whose wisdom was forged both in war and along the paths he has walked.
 
@@ -403,6 +403,20 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ---
 
+### Nix Sablewing
+
+#### Faerie • Slyborne • Scoundrel / Alchemist
+
+> Always with a hidden vial and an improvised plan, Nix turns mistakes into opportunities.
+
+**Opportunist:** Whenever an ally fails an attack roll, place 1 token on this card.
+
+**Improvised Poison:** Spend 1 token for Nix to give a vial of poison to an ally within Very Close range. An ally can use this poison on a melee attack to deal an additional 1d4 damage and make the target Vulnerable until they clear 1 Hit Point.
+
+**Blinding Smoke:** Spend 3 tokens to have Nix throw a smoke bomb within Far range, creating an area of Very Close range around the point of impact. All targets within the smoke have disadvantage on their next rolls.
+
+---
+
 ### Null Veyron
 
 #### Clank • Orderborne • Hunter
@@ -419,7 +433,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Quillian Shadowmoon
 
-#### Simiah • Highborne • Bard
+#### Simiah • Highborne • Performer
 
 > A renowned traveling bard who brings his music to every corner he visits.
 
@@ -455,7 +469,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Sovann Rai
 
-#### Ribbet • Orderborne • Cleric
+#### Ribbet • Orderborne • Devout
 
 > A devoted pilgrim, always willing to offer aid to those who cross his path.
 
@@ -467,7 +481,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Tamir Paracelion
 
-#### Halfling • Seaborne • Alchemist
+#### Halfling • Seaborne • Specialist / Alchemist
 
 > An eccentric alchemist who claims to be perfecting “the ultimate formula of controlled combustion.”
 
@@ -479,9 +493,39 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ---
 
+### Tharion Aegis
+
+#### Clank • Loreborne • Scholar / Warden
+
+> Adaptable to any situation, he is always one step ahead of the impact.
+
+**Witness (1):** Whenever an ally marks 1 or more Hit Points, place 1 token on this card.
+
+**Kinetic Barrier:** Spend 3 tokens to make an ally within Close range resistant to physical damage until the next attack.
+
+**Arcane Barrier:** Spend 3 tokens to make an ally within Close range resistant to magic damage until the next attack.
+
+An ally can only benefit from one of these effects at a time. Applying a new effect removes the previous one.
+
+---
+
+### Vexlin Bell
+
+#### Goblin • Loreborne • Scholar / Arcanist
+
+> A small student who used to fall asleep in class... until she realized it could be her greatest strength.
+
+**Channel:** Whenever this ally gains the spotlight, place 1 token on this card.
+
+**Drowsiness:** Spend 2 tokens to have Vexlin make an adversary within Very Close range Asleep until they take damage. Asleep targets cannot move or attack.
+
+**Mass Sleep:** Spend 6 tokens to have Vexlin make 1d4 adversaries within Far range Asleep until they take damage.
+
+---
+
 ### Yakov Kargan
 
-#### Orc • Duneborne • Summoner
+#### Orc • Wildborne • Spiritist
 
 > He bends the earth to his will, making his allies harder to bring down.
 

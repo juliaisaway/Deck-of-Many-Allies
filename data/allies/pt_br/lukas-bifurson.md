@@ -4,7 +4,7 @@ name: Lukas Bifurson
 
 ancestry: infernis
 community: orderborne
-role: guardian
+role: warden
 
 keywords: [prepared]
 tags: [support, buff, stress, damage]

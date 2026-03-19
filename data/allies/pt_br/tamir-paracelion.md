@@ -4,7 +4,7 @@ name: Tamir Paracelion
 
 ancestry: halfling
 community: seaborne
-role: alchemist
+role: [specialist, alchemist]
 
 keywords: [inspired]
 tags: [damage, ranged, heal]

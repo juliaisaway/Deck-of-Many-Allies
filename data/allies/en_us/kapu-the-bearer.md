@@ -4,7 +4,7 @@ name: Kapu, the Bearer
 
 ancestry: galapa
 community: wildborne
-role: guardian
+role: warden
 
 keywords: [prepared]
 tags: [support, defense, stress]

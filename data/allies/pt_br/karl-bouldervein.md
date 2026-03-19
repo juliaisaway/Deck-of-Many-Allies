@@ -4,7 +4,7 @@ name: Karl Bouldervein
 
 ancestry: dwarf
 community: underborne
-role: hunter
+role: [hunter, gunslinger]
 
 keywords: [opportunist]
 tags: [control, area, melee]
