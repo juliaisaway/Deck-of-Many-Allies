@@ -215,7 +215,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Bernie Kyrellan
 
-#### Canin • Wanderborne • Specialist / Merchant
+#### Canis • Wanderborne • Specialist / Merchant
 
 > A merchant always chasing opportunity. He talks fast, smiles often, and disappears at the first sign of danger.
 

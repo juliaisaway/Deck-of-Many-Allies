@@ -215,7 +215,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Bernô Kyrellan
 
-#### Canin • Nômade • Especialista / Comerciante
+#### Canis • Nômade • Especialista / Comerciante
 
 > Mercador sempre em busca de oportunidades. Ele fala rápido, sorri muito e desaparece ao sinal de perigo.
 

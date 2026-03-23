@@ -1,5 +1,5 @@
 ---
-id: canin
-name: Canin
+id: canis
+name: Canis
 source: custom
 ---

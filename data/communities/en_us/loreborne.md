@@ -3,3 +3,7 @@ id: loreborne
 name: Loreborne
 source: daggerheart-srd
 ---
+
+# Loreborne
+
+**Well-Read:** You have advantage on rolls that involve the history, culture, or politics of a prominent person or place.

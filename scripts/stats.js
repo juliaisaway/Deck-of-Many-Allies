@@ -113,6 +113,8 @@ function renderSourceMap(title, sourceMap) {
     out += `- Total: **(${total})**\n\n`;
   });
 
+  out += "---\n\n";
+
   return out;
 }
 
@@ -127,6 +129,8 @@ function renderMap(title, map) {
   });
 
   out += `- Total: **(${total})**\n\n`;
+
+  out += "---\n\n";
 
   return out;
 }
