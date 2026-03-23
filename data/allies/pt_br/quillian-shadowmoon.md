@@ -6,7 +6,7 @@ ancestry: simiah
 community: highborne
 role: performer
 
-keywords: [prepared]
+keywords: [channel]
 tags: [control, area, debuff]
 ---
 

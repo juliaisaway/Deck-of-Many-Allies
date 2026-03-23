@@ -6,9 +6,10 @@
   "private": false,
   "scripts": {
     "validate": "node scripts/validate.js",
-    "build": "npm run validate && node scripts/build.js",
+    "build": "npm run validate && node scripts/stats.js && node scripts/build.js",
     "build:only": "node scripts/build.js",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "stats": "node scripts/stats.js"
   },
   "repository": {
     "type": "git",

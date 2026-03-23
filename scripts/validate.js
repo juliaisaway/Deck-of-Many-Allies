@@ -41,13 +41,14 @@ const ROLE_SCHEMA = ["id", "name", "author"];
 
 const VALID_SOURCES = ["daggerheart-srd", "the-void-playtest", "custom"];
 
-// ===== LOAD FILES =====
+// ===== HELPERS =====
+
+function warn(message) {
+  console.warn("⚠️ " + message);
+}
 
 function loadFiles(dir) {
-  if (!fs.existsSync(dir)) {
-    console.warn(`⚠️ Missing directory: ${dir}`);
-    return [];
-  }
+  if (!fs.existsSync(dir)) return [];
 
   return fs
     .readdirSync(dir)
@@ -59,16 +60,12 @@ function loadFiles(dir) {
     });
 }
 
-// ===== ASSERT =====
-
 function assert(condition, message) {
   if (!condition) {
     console.error("❌ " + message);
     process.exit(1);
   }
 }
-
-// ===== HELPERS =====
 
 function isKebabCase(str) {
   return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(str);
@@ -96,6 +93,21 @@ function validateList(value, validSet, fieldName, file, locale) {
       `[${locale}] ${file} has invalid ${fieldName}: ${v}`,
     );
   });
+}
+
+// ===== LOAD VOID SOURCES =====
+
+function loadVoidSources(dir, schema) {
+  const items = loadFiles(dir);
+  const set = new Set();
+
+  items.forEach(({ data }) => {
+    if (schema.includes("source") && data.source === "the-void-playtest") {
+      set.add(data.id);
+    }
+  });
+
+  return set;
 }
 
 // ===== DICTIONARY =====
@@ -170,6 +182,20 @@ function validateLocale(locale) {
     ROLE_SCHEMA,
   );
 
+  // ===== VOID SOURCES =====
+
+  const voidAncestries = loadVoidSources(
+    `${basePath}/ancestries/${locale}`,
+    ANCESTRY_SCHEMA,
+  );
+
+  const voidCommunities = loadVoidSources(
+    `${basePath}/communities/${locale}`,
+    COMMUNITY_SCHEMA,
+  );
+
+  let warnedVoidGlobal = false;
+
   // ===== KEYWORDS =====
 
   const keywordIds = new Set();
@@ -226,7 +252,6 @@ function validateLocale(locale) {
     assert(title === data.name, `[${locale}] ${file} title mismatch`);
 
     assert(isKebabCase(data.id), `[${locale}] ${file} id must be kebab-case`);
-
     assert(data.id === filename, `[${locale}] ${file} filename must match id`);
 
     if (allyIds.has(data.id)) {
@@ -235,13 +260,11 @@ function validateLocale(locale) {
 
     allyIds.add(data.id);
 
-    // STRUCTURE
     assert(
       !Array.isArray(data.community),
       `[${locale}] ${file} community must be single`,
     );
 
-    // DICTIONARY
     validateList(data.ancestry, ancestries, "ancestry", file, locale);
     validateList(data.role, roles, "role", file, locale);
 
@@ -250,7 +273,29 @@ function validateLocale(locale) {
       `[${locale}] ${file} invalid community`,
     );
 
-    // KEYWORDS
+    // ===== VOID CHECK =====
+
+    const ancestriesList = Array.isArray(data.ancestry)
+      ? data.ancestry
+      : [data.ancestry];
+
+    const usesVoid =
+      ancestriesList.some((a) => voidAncestries.has(a)) ||
+      voidCommunities.has(data.community);
+
+    if (usesVoid) {
+      if (!warnedVoidGlobal) {
+        warn(
+          `Materials from "The Void" are playtest-only and cannot be used in commercial products under the DPCGL.`,
+        );
+        warnedVoidGlobal = true;
+      }
+
+      warn(`[${locale}] ${data.name} (${file}) uses The Void content`);
+    }
+
+    // ===== KEYWORDS =====
+
     (data.keywords || []).forEach((k) => {
       assert(keywordIds.has(k), `[${locale}] ${file} unknown keyword: ${k}`);
     });
@@ -267,30 +312,95 @@ function validateLocale(locale) {
 
 // ===== CROSS LOCALE =====
 
+function normalize(value) {
+  if (Array.isArray(value)) {
+    return [...value].sort();
+  }
+  return value;
+}
+
+function isEqual(a, b) {
+  const na = normalize(a);
+  const nb = normalize(b);
+
+  return JSON.stringify(na) === JSON.stringify(nb);
+}
+
 function validateCrossLocale(results) {
-  const base = results[BASE_LOCALE];
+  const baseLocale = BASE_LOCALE;
+  const baseAllies = loadFiles(`data/allies/${baseLocale}`);
 
-  Object.entries(results).forEach(([locale, data]) => {
-    if (locale === BASE_LOCALE) return;
+  const baseMap = {};
 
-    ["allies", "keywords", "ancestries", "communities", "roles"].forEach(
-      (type) => {
-        // ===== MISSING → WARNING
-        base[type].forEach((id) => {
-          if (!data[type].has(id)) {
-            console.warn(`⚠️ [i18n] Missing ${type} in ${locale}: ${id}`);
-          }
-        });
+  baseAllies.forEach(({ data }) => {
+    baseMap[data.id] = data;
+  });
 
-        // ===== EXTRA → ERROR
-        data[type].forEach((id) => {
+  Object.entries(results).forEach(([locale]) => {
+    if (locale === baseLocale) return;
+
+    const compareAllies = loadFiles(`data/allies/${locale}`);
+
+    const compareMap = {};
+    compareAllies.forEach(({ data }) => {
+      compareMap[data.id] = data;
+    });
+
+    // ===== EXISTENCE =====
+
+    Object.keys(baseMap).forEach((id) => {
+      if (!compareMap[id]) {
+        console.warn(`⚠️ [i18n] Missing ally in ${locale}: ${id}`);
+      }
+    });
+
+    Object.keys(compareMap).forEach((id) => {
+      assert(baseMap[id], `[i18n] Extra ally in ${locale}: ${id}`);
+    });
+
+    // ===== STRUCTURAL VALIDATION =====
+
+    Object.keys(baseMap).forEach((id) => {
+      const base = baseMap[id];
+      const other = compareMap[id];
+
+      if (!other) return;
+
+      const fields = ["ancestry", "community", "role"];
+
+      fields.forEach((field) => {
+        if (!isEqual(base[field], other[field])) {
           assert(
-            base[type].has(id),
-            `[i18n] Extra ${type} in ${locale}: ${id}`,
+            false,
+            `[i18n] Structural mismatch in ${locale} for ally "${id}" field "${field}"
+base (${baseLocale}): ${JSON.stringify(base[field])}
+other (${locale}): ${JSON.stringify(other[field])}`,
           );
-        });
-      },
-    );
+        }
+      });
+
+      // ===== KEYWORDS =====
+
+      if (!isEqual(base.keywords || [], other.keywords || [])) {
+        assert(
+          false,
+          `[i18n] Keyword mismatch in ${locale} for ally "${id}"
+base (${baseLocale}): ${JSON.stringify(base.keywords || [])}
+other (${locale}): ${JSON.stringify(other.keywords || [])}`,
+        );
+      }
+
+      // ===== TAGS =====
+
+      if (!isEqual(base.tags || [], other.tags || [])) {
+        assert(
+          false,
+          `[i18n] Tags mismatch in ${locale} for ally "${id}"
+base (${baseLocale}): ${JSON.stringify(base.tags || [])}
+other (${locale}): ${JSON.stringify(other.tags || [])}`,
+        );
+      }
+    });
   });
 }
 
