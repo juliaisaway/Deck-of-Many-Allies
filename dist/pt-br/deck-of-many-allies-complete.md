@@ -309,7 +309,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Fionna MacTine
 
-#### Fada • Disciplinado • Arcanist
+#### Fada • Disciplinado • Arcanista
 
 > Feiticeira piromante, cujo temperamento acende chamas que ela nem sempre consegue conter.
 
@@ -511,7 +511,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ### Vexlin Bell
 
-#### Goblin • Erudita • Estudioso / Arcanist
+#### Goblin • Erudita • Estudioso / Arcanista
 
 > Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 

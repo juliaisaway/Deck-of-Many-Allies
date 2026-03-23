@@ -1,4 +1,4 @@
 ---
 id: arcanist
-name: Arcanist
+name: Arcanista
 ---
