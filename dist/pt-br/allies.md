@@ -4,7 +4,7 @@
 
 ### Andrey de Gèovan
 
-#### Humano • Fora da Lei • Caçador
+#### Humano - Fora da Lei - Caçador
 
 > Integrante de uma ordem oculta, dedica-se a eliminar ameaças que não deveriam existir.
 
@@ -18,7 +18,7 @@
 
 ### Bernô Kyrellan
 
-#### Canis • Nômade • Especialista / Comerciante
+#### Canis - Nômade - Especialista / Comerciante
 
 > Mercador sempre em busca de oportunidades. Ele fala rápido, sorri muito e desaparece ao sinal de perigo.
 
@@ -26,15 +26,29 @@
 
 **Negócio Fechado:** Gaste 1 marcador para Bernô conceder uma das opções abaixo.
 
-• Um aliado recupera 1 Ponto de Armadura.
-• Um aliado recupera 1 Ponto de Vida.
-• Um aliado recupera 1 Ponto de Fadiga.
+- Um aliado recupera 1 Ponto de Armadura.
+- Um aliado recupera 1 Ponto de Vida.
+- Um aliado recupera 1 Ponto de Fadiga.
+
+---
+
+### Borin Geargrind
+
+#### Anão - Montanhês - Trabalhador / Pistoleiro
+
+> Antigamente quebrava rochas. Hoje, quebra tudo que ousa ficar no caminho.
+
+**Triunfo:** Sempre que um adversário for derrotado, coloque 1 marcador nesta carta.
+
+**Rajada Giratória:** Se Borin não estiver Superaquecido, gaste 3 marcadores para atacar um alvo em alcance distante, causando 2d6 de dano físico. Você pode continuar disparando. Para cada disparo adicional, role 1d6 e some ao dano. Se rolar 1 ou 2, Borin fica Superaquecido e você para de rolar.
+
+**Ventilar o Tambor:** Gaste 1 marcador para remover a condição de Superaquecido de Borin.
 
 ---
 
 ### Callum O'Mara
 
-#### Firbolg • Montanhês • Trabalhador
+#### Firbolg - Montanhês - Trabalhador
 
 > Um humilde fazendeiro, dedicado à sua terra e àqueles que dela dependem.
 
@@ -48,7 +62,7 @@
 
 ### Coltan Ganzorig
 
-#### Fauno • Montanhês • Trabalhador / Rebelde
+#### Fauno - Montanhês - Trabalhador / Rebelde
 
 > De mãos calejadas e espírito inflamado, luta tanto por sustento quanto por quem ama.
 
@@ -62,7 +76,7 @@
 
 ### Damir e Ched
 
-#### Fauno • Montanhês • Trabalhador
+#### Fauno - Montanhês - Trabalhador
 
 > Jovens trabalhadores carregando suas picaretas pesadas para quebrar pedras... ou monstros.
 
@@ -74,7 +88,7 @@
 
 ### Drogathar Kragson
 
-#### Gigante • Marítimo • Bruto / Pirata
+#### Gigante - Marítimo - Bruto / Pirata
 
 > Navegador dos mares, carrega a fúria das tempestades em suas veias.
 
@@ -88,7 +102,7 @@
 
 ### Elbek Bataa
 
-#### Drakona • Disciplinado • Batedor
+#### Drakona - Disciplinado - Batedor
 
 > Com um olhar atento e poucas palavras, transforma erros em segundas chances.
 
@@ -100,7 +114,7 @@
 
 ### Elizabeth Ironsong
 
-#### Humano • Erudita • Estudioso
+#### Humano - Erudita - Estudioso
 
 > Jovem pesquisadora, dedicada a registrar as histórias do mundo sob o olhar de quem as vive.
 
@@ -112,7 +126,7 @@
 
 ### Fionna MacTine
 
-#### Fada • Disciplinado • Arcanista
+#### Fada - Disciplinado - Arcanista
 
 > Feiticeira piromante, cujo temperamento acende chamas que ela nem sempre consegue conter.
 
@@ -124,7 +138,7 @@
 
 ### Gilbert de Balzath
 
-#### Elfo • Nômade • Pistoleiro
+#### Elfo - Nômade - Pistoleiro
 
 > Andarilho de origens incertas, sempre pronto com sua arma de múltiplos disparos.
 
@@ -138,7 +152,7 @@
 
 ### Iruanê Anayru
 
-#### Fungril • Subterrâneo • Batedor
+#### Fungril - Subterrâneo - Batedor
 
 > Ela conhece cada pedra, cada fungo e cada ser que rasteja nas profundezas das cavernas.
 
@@ -152,7 +166,7 @@
 
 ### Kapu, o Portador
 
-#### Galapa • Silvestre • Protetor
+#### Galapa - Silvestre - Protetor
 
 > Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
 
@@ -164,7 +178,7 @@
 
 ### Karl Bouldervein
 
-#### Anão • Subterrâneo • Caçador / Pistoleiro
+#### Anão - Subterrâneo - Caçador / Pistoleiro
 
 > Veterano das encostas, acredita que um bom disparo resolve o que palavras não conseguem.
 
@@ -178,7 +192,7 @@
 
 ### Lukas Bifurson
 
-#### Infernis • Disciplinado • Protetor
+#### Infernis - Disciplinado - Protetor
 
 > Um velho estrategista, cuja sabedoria foi forjada tanto na guerra quanto nos caminhos que percorreu.
 
@@ -186,15 +200,15 @@
 
 **Ordens do Veterano:** Gaste 1 marcador para Lukas conceder uma das opções abaixo. Cada opção só pode ser escolhida uma vez.
 
-• Um aliado faz um ataque com vantagem.
-• Um aliado recupera 1 Ponto de Fadiga.
-• Um aliado soma 1d8 à rolagem de dano.
+- Um aliado faz um ataque com vantagem.
+- Um aliado recupera 1 Ponto de Fadiga.
+- Um aliado soma 1d8 à rolagem de dano.
 
 ---
 
 ### Lyra Negraluna
 
-#### Elfo / Humano • Aristocrático • Oráculo
+#### Elfo / Humano - Aristocrático - Oráculo
 
 > Herdeira de uma linhagem mística, vive interpretando o destino nas cartas de quem cruza seu caminho.
 
@@ -208,7 +222,7 @@
 
 ### Nix Sablewing
 
-#### Fada • Fora da Lei • Canalha / Alquimista
+#### Fada - Fora da Lei - Canalha / Alquimista
 
 > Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades
 
@@ -222,7 +236,7 @@
 
 ### Null Veyron
 
-#### Clank • Disciplinado • Caçador
+#### Clank - Disciplinado - Caçador
 
 > Criado por magos, aprendeu suas táticas e hoje é expecialista em silenciá-los.
 
@@ -236,7 +250,7 @@
 
 ### Quillian Shadowmoon
 
-#### Símio • Aristocrático • Artista
+#### Símio - Aristocrático - Artista
 
 > Bardo viajante de renome, leva sua música a todos os cantos por onde passa.
 
@@ -248,7 +262,7 @@
 
 ### Saheya de Kalyr
 
-#### Pequenino • Silvestre • Espiritista
+#### Pequenino - Silvestre - Espiritista
 
 > Criadora de talismãs, protege aqueles ao seu redor com magia e um cuidado quase maternal.
 
@@ -260,7 +274,7 @@
 
 ### Seth das Dunas
 
-#### Katari • Nômade • Batedor
+#### Katari - Nômade - Batedor
 
 > Errante das terras áridas, aprendeu que sobreviver é sempre a melhor vitória.
 
@@ -272,7 +286,7 @@
 
 ### Sovann Rai
 
-#### Quacho • Disciplinado • Devoto
+#### Quacho - Disciplinado - Devoto
 
 > Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
 
@@ -284,7 +298,7 @@
 
 ### Tamir Paracelion
 
-#### Pequenino • Marítimo • Especialista / Alquimista
+#### Pequenino - Marítimo - Especialista / Alquimista
 
 > Excêntrico alquimista, ele afirma estar aperfeiçoando “a fórmula definitiva da combustão controlada”.
 
@@ -298,7 +312,7 @@
 
 ### Tharion Aegis
 
-#### Clank • Erudita • Estudioso / Protetor
+#### Clank - Erudita - Estudioso / Protetor
 
 > Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
 
@@ -312,9 +326,25 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ---
 
+### Torgin Brimbleblast
+
+#### Goblin - Montanhês - Trabalhador / Alquimista
+
+> Se funcionar, é genial. Se não funcionar… bom, ainda é impressionante.
+
+**Pressionado:** Sempre que um aliado rolar com Medo em sua Dualidade, coloque 1 marcador nesta carta.
+
+**Carga Descontrolada:** Gaste 3 marcadores para Torgin arremessar um explosivo em um adversário em alcance distante, causando 2d8 de dano físico. Após o ataque, role 1d6:
+
+- 1: o adversário realiza uma ação imediatamente
+- 2-4: nada acontece.
+- 5–6: o adversário fica Vulnerável temporariamente e coloque 1 marcador nesta carta.
+
+---
+
 ### Vexlin Bell
 
-#### Goblin • Erudita • Estudioso / Arcanista
+#### Goblin - Erudita - Estudioso / Arcanista
 
 > Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
 
@@ -328,7 +358,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ### Yakov Kargan
 
-#### Orc • Silvestre • Espiritista
+#### Orc - Silvestre - Espiritista
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

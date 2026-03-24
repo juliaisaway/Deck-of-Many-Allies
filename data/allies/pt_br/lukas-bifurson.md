@@ -18,6 +18,6 @@ tags: [support, buff, stress, damage]
 
 **Ordens do Veterano:** Gaste 1 marcador para Lukas conceder uma das opções abaixo. Cada opção só pode ser escolhida uma vez.
 
-• Um aliado faz um ataque com vantagem.
-• Um aliado recupera 1 Ponto de Fadiga.
-• Um aliado soma 1d8 à rolagem de dano.
+- Um aliado faz um ataque com vantagem.
+- Um aliado recupera 1 Ponto de Fadiga.
+- Um aliado soma 1d8 à rolagem de dano.

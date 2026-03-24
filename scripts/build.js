@@ -209,7 +209,7 @@ function build(locale) {
         a.name,
       );
 
-      const meta = `#### ${ancestry} • ${community} • ${role}`;
+      const meta = `#### ${ancestry} - ${community} - ${role}`;
 
       return `${name}\n\n${meta}\n\n${body}`;
     });

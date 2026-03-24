@@ -18,6 +18,6 @@ tags: [support, utility, heal, fatigue, armor]
 
 **Ready for Business:** Spend 1 token for Bernie to grant one of the following options.
 
-• An ally clears 1 Armor Slot.  
-• An ally clears 1 Hit Point.  
-• An ally clears 1 Stress.
+- An ally clears 1 Armor Slot.  
+- An ally clears 1 Hit Point.  
+- An ally clears 1 Stress.

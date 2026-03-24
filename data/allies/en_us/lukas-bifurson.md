@@ -18,6 +18,6 @@ tags: [support, buff, stress, damage]
 
 **Veteran Orders:** Spend 1 token for Lukas to grant one of the following options. Each option can only be chosen once.
 
-• An ally makes an attack with advantage.  
-• An ally clears 1 Stress.  
-• An ally adds 1d8 to a damage roll.
+- An ally makes an attack with advantage.  
+- An ally clears 1 Stress.  
+- An ally adds 1d8 to a damage roll.

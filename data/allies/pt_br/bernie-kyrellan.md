@@ -18,6 +18,6 @@ tags: [support, utility, heal, fatigue, armor]
 
 **Negócio Fechado:** Gaste 1 marcador para Bernô conceder uma das opções abaixo.
 
-• Um aliado recupera 1 Ponto de Armadura.
-• Um aliado recupera 1 Ponto de Vida.
-• Um aliado recupera 1 Ponto de Fadiga.
+- Um aliado recupera 1 Ponto de Armadura.
+- Um aliado recupera 1 Ponto de Vida.
+- Um aliado recupera 1 Ponto de Fadiga.

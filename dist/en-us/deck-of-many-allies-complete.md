@@ -201,7 +201,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Andrey of Gèovan
 
-#### Human • Slyborne • Hunter
+#### Human - Slyborne - Hunter
 
 > A member of a hidden order, he is dedicated to eliminating threats that should not exist.
 
@@ -215,7 +215,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Bernie Kyrellan
 
-#### Canis • Wanderborne • Specialist / Merchant
+#### Canis - Wanderborne - Specialist / Merchant
 
 > A merchant always chasing opportunity. He talks fast, smiles often, and disappears at the first sign of danger.
 
@@ -223,15 +223,29 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 **Ready for Business:** Spend 1 token for Bernie to grant one of the following options.
 
-• An ally clears 1 Armor Slot.  
-• An ally clears 1 Hit Point.  
-• An ally clears 1 Stress.
+- An ally clears 1 Armor Slot.  
+- An ally clears 1 Hit Point.  
+- An ally clears 1 Stress.
+
+---
+
+### Borin Geargrind
+
+#### Dwarf - Ridgeborne - Laborer / Gunslinger
+
+> Once he broke rocks. Now he breaks anything that dares stand in his way.
+
+**Triumph:** Whenever an adversary is defeated, place 1 token on this card.
+
+**Spinning Barrage:** If Borin is not Overheated, spend 3 tokens to attack a target within Far range, dealing 2d6 physical damage. You may continue firing. For each additional shot, roll 1d6 and add the result to the damage. If you roll a 1 or 2, Borin becomes Overheated and you stop rolling.
+
+**Vent the Drum:** Spend 1 token to remove the Overheated condition from Borin.
 
 ---
 
 ### Callum O'Mara
 
-#### Firbolg • Ridgeborne • Laborer
+#### Firbolg - Ridgeborne - Laborer
 
 > A humble farmer, devoted to his land and to those who depend on it.
 
@@ -245,7 +259,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Coltan Ganzorig
 
-#### Faun • Ridgeborne • Laborer / Rebel
+#### Faun - Ridgeborne - Laborer / Rebel
 
 > With calloused hands and a fiery spirit, he fights both to survive and for those he loves.
 
@@ -259,7 +273,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Damir e Ched
 
-#### Faun • Ridgeborne • Laborer
+#### Faun - Ridgeborne - Laborer
 
 > Young workers carrying heavy pickaxes to break stone... or monsters.
 
@@ -271,7 +285,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Drogathar Kragson
 
-#### Giant • Seaborne • Brute / Pirate
+#### Giant - Seaborne - Brute / Pirate
 
 > A seafaring warrior who carries the fury of storms in his veins.
 
@@ -285,7 +299,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Elbek Bataa
 
-#### Drakona • Orderborne • Scout
+#### Drakona - Orderborne - Scout
 
 > With a sharp eye and few words, he turns mistakes into second chances.
 
@@ -297,7 +311,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Elizabeth Ironsong
 
-#### Human • Loreborne • Scholar
+#### Human - Loreborne - Scholar
 
 > A young scholar devoted to recording the stories of the world through the eyes of those who live them.
 
@@ -309,7 +323,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Fionna MacTine
 
-#### Faerie • Orderborne • Arcanist
+#### Faerie - Orderborne - Arcanist
 
 > A pyromancer sorcerer whose temper ignites flames she cannot always control.
 
@@ -321,7 +335,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Gilbert Balzath
 
-#### Elf • Wanderborne • Gunslinger
+#### Elf - Wanderborne - Gunslinger
 
 > A wanderer of uncertain origins, always ready with his multi-shot firearm.
 
@@ -335,7 +349,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Iruanê Anayru
 
-#### Fungril • Underborne • Scout
+#### Fungril - Underborne - Scout
 
 > She knows every stone, every fungus, and every crawling thing that dwells within the depths of the caverns.
 
@@ -349,7 +363,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Kapu, the Bearer
 
-#### Galapa • Wildborne • Warden
+#### Galapa - Wildborne - Warden
 
 > A tireless wanderer who finds ways to ease the burdens his companions carry.
 
@@ -361,7 +375,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Karl Bouldervein
 
-#### Dwarf • Underborne • Hunter / Gunslinger
+#### Dwarf - Underborne - Hunter / Gunslinger
 
 > A veteran of the slopes, he believes a good shot solves what words cannot.
 
@@ -375,7 +389,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Lukas Bifurson
 
-#### Infernis • Orderborne • Warden
+#### Infernis - Orderborne - Warden
 
 > An old strategist whose wisdom was forged both in war and along the paths he has walked.
 
@@ -383,15 +397,15 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 **Veteran Orders:** Spend 1 token for Lukas to grant one of the following options. Each option can only be chosen once.
 
-• An ally makes an attack with advantage.  
-• An ally clears 1 Stress.  
-• An ally adds 1d8 to a damage roll.
+- An ally makes an attack with advantage.  
+- An ally clears 1 Stress.  
+- An ally adds 1d8 to a damage roll.
 
 ---
 
 ### Lyra Darkmoon
 
-#### Elf / Human • Highborne • Oracle
+#### Elf / Human - Highborne - Oracle
 
 > Heir to a mystical lineage, she interprets fate through the cards of those who cross her path.
 
@@ -405,7 +419,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Nix Sablewing
 
-#### Faerie • Slyborne • Scoundrel / Alchemist
+#### Faerie - Slyborne - Scoundrel / Alchemist
 
 > Always with a hidden vial and an improvised plan, Nix turns mistakes into opportunities.
 
@@ -419,7 +433,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Null Veyron
 
-#### Clank • Orderborne • Hunter
+#### Clank - Orderborne - Hunter
 
 > Created by mages, it learned their tactics and now specializes in silencing them.
 
@@ -433,7 +447,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Quillian Shadowmoon
 
-#### Simiah • Highborne • Performer
+#### Simiah - Highborne - Performer
 
 > A renowned traveling bard who brings his music to every corner he visits.
 
@@ -445,7 +459,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Saheya of Kalyr
 
-#### Halfling • Wildborne • Spiritist
+#### Halfling - Wildborne - Spiritist
 
 > A maker of talismans, she protects those around her with magic and near-maternal care.
 
@@ -457,7 +471,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Seth of the Dunes
 
-#### Katari • Wanderborne • Scout
+#### Katari - Wanderborne - Scout
 
 > A wanderer of the arid lands, he has learned that survival is always the greatest victory.
 
@@ -469,7 +483,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Sovann Rai
 
-#### Ribbet • Orderborne • Devout
+#### Ribbet - Orderborne - Devout
 
 > A devoted pilgrim, always willing to offer aid to those who cross his path.
 
@@ -481,7 +495,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Tamir Paracelion
 
-#### Halfling • Seaborne • Specialist / Alchemist
+#### Halfling - Seaborne - Specialist / Alchemist
 
 > An eccentric alchemist who claims to be perfecting “the ultimate formula of controlled combustion.”
 
@@ -495,7 +509,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Tharion Aegis
 
-#### Clank • Loreborne • Scholar / Warden
+#### Clank - Loreborne - Scholar / Warden
 
 > Adaptable to any situation, he is always one step ahead of the impact.
 
@@ -509,9 +523,25 @@ An ally can only benefit from one of these effects at a time. Applying a new eff
 
 ---
 
+### Torgin Brimbleblast
+
+#### Goblin - Ridgeborne - Laborer / Alchemist
+
+> If it works, it’s genius. If it doesn’t… well, it’s still impressive.
+
+**Pressured:** Whenever an ally rolls with Fear on their Duality Dice, place 1 token on this card.
+
+**Unstable Charge:** Spend 3 tokens to have Torgin throw an explosive at an adversary within Far range, dealing 2d8 physical damage. After the attack, roll 1d6:
+
+- 1: the adversary immediately takes an action  
+- 2–4: nothing happens  
+- 5–6: the adversary becomes Vulnerable temporarily and place 1 token on this card.
+
+---
+
 ### Vexlin Bell
 
-#### Goblin • Loreborne • Scholar / Arcanist
+#### Goblin - Loreborne - Scholar / Arcanist
 
 > A small student who used to fall asleep in class... until she realized it could be her greatest strength.
 
@@ -525,7 +555,7 @@ An ally can only benefit from one of these effects at a time. Applying a new eff
 
 ### Yakov Kargan
 
-#### Orc • Wildborne • Spiritist
+#### Orc - Wildborne - Spiritist
 
 > He bends the earth to his will, making his allies harder to bring down.
 
