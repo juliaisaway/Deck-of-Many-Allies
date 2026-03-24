@@ -253,7 +253,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 **Tática de Rua:** Gaste 1 marcador para fazer Coltan dar 2d8+3 de dano físico a um adversário em alcance corpo a corpo. Se este adversário estiver Imobilizado, dê 1d8 a mais de dano.
 
-**Inspirar a Rebelião:** Gaste 3 marcadores para Coltan conceder 1d4 para cada aliado em alcance muito próximo. Um aliado pode rolar esse dado e somar o resultado a um teste, teste de reação ou rolagem de dano. Os dados não utilizados são perdidos no fim da sessão.
+**Inspirar a Rebelião:** Gaste 3 marcadores para Coltan conceder 1d4 para cada aliado em alcance muito próximo. Um aliado pode rolar esse dado e somar o resultado a um teste ou rolagem de dano. Os dados não utilizados são perdidos no fim da cena.
 
 ---
 
@@ -291,7 +291,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 **Preparado (2):** Este aliado começa com 2 marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
-**Segunda Chance:** Quando um aliado em alcance próximo falhar em um teste, Gaste 1 marcador para *Elbek* permitir que ele role novamente um dos seus Dados de Dualidade.
+**Segunda Chance:** Quando um aliado em alcance próximo falhar em um teste, Gaste 1 marcador para Elbek permitir que ele role novamente um dos seus Dados de Dualidade.
 
 ---
 
@@ -367,7 +367,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 **Oportunista:** Toda vez que um aliado errar um ataque, coloque 1 marcador nesta carta.
 
-**Laço do Caçador**: Gaste 3 marcadores para *Enlaçar* um alvo muito próximo temporariamente. Um alvo Enlaçado fica Imobilizado e Vulnerável, mas Karl deve se manter muito próximo dele.
+**Laço do Caçador**: Gaste 3 marcadores para Enlaçar um alvo muito próximo temporariamente. Um alvo Enlaçado fica Imobilizado e Vulnerável, mas Karl deve se manter muito próximo dele.
 
 **Golpe Varredor:** Gaste 2 marcadores para fazer Karl disparar em cone. Role 3d6 e distribua o dano entre todos os adversários em alcance muito próximo à sua frente.
 
