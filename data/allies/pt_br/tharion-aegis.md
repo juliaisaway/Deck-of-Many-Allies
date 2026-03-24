@@ -6,7 +6,7 @@ ancestry: clank
 community: loreborne
 role: [scholar, warden]
 
-keywords: [witness]
+keywords: [track]
 tags: [support, defense, reactive]
 ---
 
@@ -14,7 +14,7 @@ tags: [support, defense, reactive]
 
 > Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
 
-**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
+**Rastrear:** Sempre que um aliado causar dano a um adversário, coloque 1 marcador nesta carta.
 
 **Barreira Cinética:** Gaste 3 marcadores para tornar um aliado em alcance próximo resistente a dano físico até o próximo ataque.
 

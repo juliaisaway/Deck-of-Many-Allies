@@ -168,11 +168,13 @@
 
 #### Galapa - Wildborne - Warden
 
-> A tireless wanderer who finds ways to ease the burdens his companions carry.
+> He eases the burden of fatigue… and chooses who will carry it next.
 
-**Prepared (3):** This card begins with 3 tokens and cannot gain additional tokens until the next rest.
+**Witness (1):** Whenever an ally marks 1 or more Hit Points, place 1 token on this card.
 
-**Silent Sacrifice:** Whenever an ally would mark 1 Stress, you may spend 1 token from this card to prevent it from being marked.
+**Drain the Burden:** Spend 3 tokens to have all allies within Very Close range clear 1 Stress.
+
+**Transfer the Burden:** Spend 3 tokens to have all adversaries within Very Close range mark 1 Stress.
 
 ---
 
@@ -316,7 +318,7 @@
 
 > Adaptable to any situation, he is always one step ahead of the impact.
 
-**Witness (1):** Whenever an ally marks 1 or more Hit Points, place 1 token on this card.
+**Track:** Whenever an ally deals damage to an adversary, place 1 token on this card.
 
 **Kinetic Barrier:** Spend 3 tokens to make an ally within Close range resistant to physical damage until the next attack.
 

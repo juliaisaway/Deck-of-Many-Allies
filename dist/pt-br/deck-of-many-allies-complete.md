@@ -365,11 +365,13 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 #### Galapa - Silvestre - Protetor
 
-> Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
+> Ele alivia o peso da fadiga… e escolhe quem o carregará depois.
 
-**Preparado (3):** Este aliado começa com 3 marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
 
-**Sacrifício Silencioso:** Sempre que um aliado for marcar 1 Ponto de Fadiga, você pode gastar 1 marcador desta carta para evitar que esse Ponto de Fadiga seja marcado.
+**Drenar Fardo:** Gaste 3 marcadores para fazer todos os aliados em alcance muito próximo recuperarem 1 Ponto de Fadiga.
+
+**Transferir Fardo:** Gaste 3 marcadores para fazer todos os adversários em alcance muito próximo marcar 1 Ponto de Fadiga.
 
 ---
 
@@ -513,7 +515,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 > Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
 
-**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
+**Rastrear:** Sempre que um aliado causar dano a um adversário, coloque 1 marcador nesta carta.
 
 **Barreira Cinética:** Gaste 3 marcadores para tornar um aliado em alcance próximo resistente a dano físico até o próximo ataque.
 

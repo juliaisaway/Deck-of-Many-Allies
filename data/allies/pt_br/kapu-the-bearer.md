@@ -6,14 +6,16 @@ ancestry: galapa
 community: wildborne
 role: warden
 
-keywords: [prepared]
-tags: [support, defense, stress]
+keywords: [witness]
+tags: [support, stress, drain]
 ---
 
 # Kapu, o Portador
 
-> Caminhante incansável, encontra formas de aliviar o peso que seus companheiros carregam.
+> Ele alivia o peso da fadiga… e escolhe quem o carregará depois.
 
-**Preparado (3):** Este aliado começa com 3 marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+**Testemunhar (1):** Sempre que um aliado marcar 1 ou mais Pontos de Vida, coloque 1 marcador nesta carta.
 
-**Sacrifício Silencioso:** Sempre que um aliado for marcar 1 Ponto de Fadiga, você pode gastar 1 marcador desta carta para evitar que esse Ponto de Fadiga seja marcado.
+**Drenar Fardo:** Gaste 3 marcadores para fazer todos os aliados em alcance muito próximo recuperarem 1 Ponto de Fadiga.
+
+**Transferir Fardo:** Gaste 3 marcadores para fazer todos os adversários em alcance muito próximo marcar 1 Ponto de Fadiga.

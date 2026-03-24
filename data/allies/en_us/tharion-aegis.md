@@ -6,7 +6,7 @@ ancestry: clank
 community: loreborne
 role: [scholar, warden]
 
-keywords: [witness]
+keywords: [track]
 tags: [support, defense, reactive]
 ---
 
@@ -14,7 +14,7 @@ tags: [support, defense, reactive]
 
 > Adaptable to any situation, he is always one step ahead of the impact.
 
-**Witness (1):** Whenever an ally marks 1 or more Hit Points, place 1 token on this card.
+**Track:** Whenever an ally deals damage to an adversary, place 1 token on this card.
 
 **Kinetic Barrier:** Spend 3 tokens to make an ally within Close range resistant to physical damage until the next attack.
 
