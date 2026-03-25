@@ -159,7 +159,7 @@ Opportunist turn their allies’ missteps into openings. When an ally’s attack
 
 ### Prepared
 
-> This card begins with N tokens and cannot gain additional tokens until the next rest.
+> This ally begins with a fixed number of tokens shown on the card and cannot gain additional tokens until the next rest.
 
 Prepared allies enter the scene with resources already at hand. These tokens represent planning, supplies, or energy gathered before the encounter.
 
@@ -191,7 +191,7 @@ Allies with Triumph grow stronger as the battle turns in their favor. Each defea
 
 ### Witness
 
-> Whenever an ally marks N or more Hit Points, place 1 token on this card.
+> Whenever an ally marks the amount of Hit Points shown on this card or more, place 1 token on this card.
 
 Allies with Witness draw strength from the suffering and struggle of their companions. The higher the threshold, the more damage must be marked to trigger this ability.
 

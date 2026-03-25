@@ -151,7 +151,7 @@ Aliados Oportunistas sabem tirar vantagem de erros e distrações. Quando um ata
 
 ### Preparado
 
-> Este aliado começa com N marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+> Este aliado começa com uma quantidade fixa de marcadores indicada na própria carta e não pode recuperar marcadores até o próximo descanso.
 
 Aliados Preparados entram em cena com recursos já prontos para uso. Esses marcadores representam planejamento, suprimentos ou energia acumulada antes do encontro.
 
@@ -183,9 +183,9 @@ Aliados com Rastrear prosperam no calor da batalha. Cada golpe bem-sucedido apro
 
 ### Testemunhar
 
-> Sempre que um aliado marcar N ou mais Pontos de Vida, coloque 1 marcador nesta carta.
+> Sempre que um aliado marcar a quantidade de Pontos de Vida indicada nesta carta ou mais, coloque 1 marcador nesta carta.
 
-Aliados com Testemunhar ganham força ao presenciar o sofrimento ou a luta de seus companheiros. Quanto maior o valor de N, mais dano precisa ser sofrido para ativar a habilidade.
+Aliados com Testemunhar ganham força ao presenciar o sofrimento ou a luta de seus companheiros. Quanto maior o valor indicado na carta, mais dano precisa ser sofrido para ativar a habilidade.
 
 ---
 
