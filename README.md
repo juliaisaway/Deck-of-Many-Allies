@@ -24,6 +24,7 @@ This project provides:
 
 All content is written in Markdown and compiled into ready-to-use documents.
 Each ally entry includes validated metadata such as ancestry, community, role, keywords, and tags.
+Keywords are defined in `data/rules/{locale}/keywords/`, and allies can only reference keywords documented there.
 
 ---
 
@@ -83,10 +84,22 @@ You can validate only:
 npm run validate
 ```
 
+You can run the automated test suite:
+
+```bash
+npm test
+```
+
 You can generate only the stats report:
 
 ```bash
 npm run stats
+```
+
+You can remove generated output before rebuilding:
+
+```bash
+npm run clean
 ```
 
 The stats report includes:
@@ -95,6 +108,8 @@ The stats report includes:
 - Ancestry and community usage grouped by source
 - Role, keyword, and tag usage counts
 - An i18n report showing missing or extra localized allies
+
+The test suite includes unit and integration coverage for validation rules, locale handling, generated output, and build tooling.
 
 If you only want to rebuild the final Markdown output without running validation or stats generation, you can use:
 

@@ -45,15 +45,19 @@ npm install
 Useful commands:
 
 ```bash
+npm test
 npm run validate
 npm run stats
+npm run clean
 npm run build
 ```
 
 What they do:
 
+- `npm test` runs the automated unit and integration tests
 - `npm run validate` checks schema rules, file naming, and i18n consistency
 - `npm run stats` generates `dist/stats.md`
+- `npm run clean` removes generated files from `dist/`
 - `npm run build` runs validation, generates stats, and rebuilds the compiled Markdown files
 
 ---
@@ -62,30 +66,31 @@ What they do:
 
 > Use the templates in `data/_templates/` as a starting point.
 
-### 1. Create the file
+Create the file:
 
 ```bash
 data/allies/{locale}/your-ally-id.md
 ```
 
-### 2. Follow the rules
+Follow the rules:
 
 - `id` must be unique and kebab-case
 - filename must match the `id`
 - `name` must match the `# heading` inside the file
 - `ancestry`, `community`, and `role` must exist in their dictionaries
-- `keywords` is required, must be an array, and each keyword must exist
-- `tags` is required and must be a non-empty array
+- `keywords` is required, must be a non-empty kebab-case array, cannot contain duplicates, and each keyword must exist
+- `tags` is required, must be a non-empty array, must use kebab-case, and cannot contain duplicates
 - `community` must be a single value
 - `ancestry` and `role` can be multiple
 
-### 3. Optional fields
+Optional fields:
 
 - `author` → recommended for contributors
 
-### 4. Validate before submitting
+Validate before submitting:
 
 ```bash
+npm test
 npm run validate
 npm run stats
 npm run build
@@ -116,6 +121,42 @@ For translated entries:
 
 ---
 
+## 🔑 Adding a New Keyword
+
+Keywords are the official mechanical vocabulary for allies. If an ally references a keyword, that keyword must exist in:
+
+- `data/rules/en_us/keywords/`
+- `data/rules/pt_br/keywords/`
+
+Create the files:
+
+```bash
+data/rules/{locale}/keywords/your-keyword-id.md
+```
+
+Follow the rules:
+
+- `id` must be unique and kebab-case
+- filename must match the `id`
+- `title` is required and should be localized for each language
+- `type` must be one of `passive`, `trigger`, `active`, or `scaling`
+- if `has_parameter` is `true`, `parameter` is required
+- if `has_parameter` is not `true`, `parameter` must be omitted or null
+
+Use it in allies:
+
+After the keyword exists in both locales, allies may reference its `id` in their `keywords` array.
+
+Validate before submitting:
+
+```bash
+npm test
+npm run validate
+npm run build
+```
+
+---
+
 ## 🧩 Adding Other Content
 
 You can also contribute:
@@ -142,7 +183,8 @@ The project enforces strict validation:
 - All IDs must be kebab-case
 - Filenames must match IDs
 - Ally file `#` headings must match the localized `name`
-- Ally `keywords` and `tags` are required and must be non-empty arrays
+- Ally `keywords` are required, must be non-empty kebab-case arrays, cannot contain duplicates, and must reference existing keywords in the same locale
+- Ally `tags` are required, must be non-empty kebab-case arrays, and cannot contain duplicates
 - Keywords used by allies must exist in the same locale
 - Cross-language consistency is required
 

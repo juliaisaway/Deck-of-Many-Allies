@@ -6,8 +6,8 @@ ancestry: human                # required, string or array of existing ancestry 
 community: wanderborne         # required, single existing community id
 role: performer                # required, string or array of existing role ids
 
-keywords: [track]              # required, array of existing keyword ids
-tags: [support, control]       # required, array of lowercase tags for indexing
+keywords: [track]              # required, non-empty array of existing kebab-case keyword ids
+tags: [support, control]       # required, non-empty array of kebab-case tags
 
 author: your-name              # optional, contributor credit
 ---
