@@ -287,7 +287,7 @@
 ---
 
 ### Sovann Rai
- 
+
 #### Quacho • Disciplinado • Devoto
 
 > Peregrino devoto, sempre disposto a oferecer auxílio aos que cruzam seu caminho.
