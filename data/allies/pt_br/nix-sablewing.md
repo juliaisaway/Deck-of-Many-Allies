@@ -12,7 +12,7 @@ tags: [control, debuff, support]
 
 # Nix Sablewing
 
-> Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades
+> Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades.
 
 **Oportunista:** Toda vez que um aliado errar um ataque, coloque 1 marcador nesta carta.
 

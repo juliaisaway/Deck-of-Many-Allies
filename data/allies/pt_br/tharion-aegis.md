@@ -12,7 +12,7 @@ tags: [support, defense, reactive]
 
 # Tharion Aegis
 
-> Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
+> Adaptativo a todas as situações, ele está sempre um passo à frente do impacto.
 
 **Rastrear:** Sempre que um aliado causar dano a um adversário, coloque 1 marcador nesta carta.
 

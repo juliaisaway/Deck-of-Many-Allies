@@ -19,5 +19,5 @@ tags: [damage, ranged, risk, chaos]
 **Carga Descontrolada:** Gaste 3 marcadores para Torgin arremessar um explosivo em um adversário em alcance distante, causando 2d8 de dano físico. Após o ataque, role 1d6:
 
 - 1: o adversário realiza uma ação imediatamente
-- 2-4: nada acontece.
-- 5–6: o adversário fica Vulnerável temporariamente e coloque 1 marcador nesta carta.
+- 2–4: nada acontece.
+- 5–6: o adversário fica Vulnerável temporariamente, e coloque 1 marcador nesta carta.

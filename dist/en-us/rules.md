@@ -40,7 +40,7 @@ This allows the player to:
 
 ### Positioning and Movement
 
-An ally is represented by a miniature on the batte map, just like any character.
+An ally is represented by a miniature on the battle map, just like any character.
 
 When the player who controls the ally **has the spotlight**, they can move the ally to a point within **Close** range as part of their actions.
 
@@ -159,7 +159,7 @@ Opportunist turn their allies’ missteps into openings. When an ally’s attack
 
 ### Prepared
 
-> This card begins with {starting_tokens} tokens and cannot gain additional tokens until the next rest.
+> This card begins with N tokens and cannot gain additional tokens until the next rest.
 
 Prepared allies enter the scene with resources already at hand. These tokens represent planning, supplies, or energy gathered before the encounter.
 
@@ -191,6 +191,6 @@ Allies with Triumph grow stronger as the battle turns in their favor. Each defea
 
 ### Witness
 
-> Whenever an ally marks {threshold} or more Hit Points, place 1 token on this card.
+> Whenever an ally marks N or more Hit Points, place 1 token on this card.
 
 Allies with Witness draw strength from the suffering and struggle of their companions. The higher the threshold, the more damage must be marked to trigger this ability.

@@ -87,7 +87,9 @@ function renderSourceMap(title, sourceMap) {
     const uniqueCount = map.size;
     const total = Array.from(map.values()).reduce((a, b) => a + b, 0);
 
-    out += `### ${source} (${uniqueCount})\n\n`;
+    out += `${source}\n\n`;
+    out += `> - Unique entries from this source: **${uniqueCount}**\n`;
+    out += `> - Total ally references to this source: **${total}**\n\n`;
 
     const sorted = mapToSortedArray(map);
 
@@ -145,7 +147,12 @@ function generateStats(locale) {
   };
 
   allies.forEach(({ data }) => {
-    validateKeywords(data.keywords, keywordIds, data.id || "unknown ally", locale);
+    validateKeywords(
+      data.keywords,
+      keywordIds,
+      data.id || "unknown ally",
+      locale,
+    );
     validateTags(data.tags, data.id || "unknown ally", locale);
 
     stats.ids.add(data.id);
@@ -208,21 +215,18 @@ function generateMarkdown(results) {
 
   let md = `# 📊 Stats for The Deck of Many Allies\n\n`;
   md += `- Total Allies: **${base.total}**\n\n`;
+  md += `## How to read this report\n\n`;
+  md += `- "Total Allies" counts unique ally entries in the base locale (\`${BASE_LOCALE}\`).\n`;
+  md += `- Source sections show both how many unique ancestry/community entries come from a source and how many times allies reference them.\n`;
+  md += `- Roles, Keywords, and Tags count assignments, not unique allies. Their totals can be higher than the ally count because one ally can have multiple roles or tags.\n\n`;
+  md += `---\n\n`;
 
-  md += renderSourceMap(
-    "🧝 Ancestries by Source",
-    base.ancestrySources,
-    BASE_LOCALE,
-  );
-  md += renderSourceMap(
-    "🏠 Communities by Source",
-    base.communitySources,
-    BASE_LOCALE,
-  );
+  md += renderSourceMap("🧝 Ancestries by Source", base.ancestrySources);
+  md += renderSourceMap("🏠 Communities by Source", base.communitySources);
 
-  md += renderMap("🧙 Roles", base.role, BASE_LOCALE);
-  md += renderMap("🔍 Keywords", base.keywords, BASE_LOCALE);
-  md += renderMap("🏷️ Tags", base.tags, BASE_LOCALE);
+  md += renderMap("🧙 Roles", base.role);
+  md += renderMap("🔍 Keywords", base.keywords);
+  md += renderMap("🏷️ Tags", base.tags);
 
   md += `## ⚠️ i18n Report\n\n`;
   md += generateI18nReport(results);
@@ -248,9 +252,9 @@ export function run() {
   console.log("📊 Stats generated at dist/stats.md");
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(process.argv[1]).href
+) {
   run();
 }
-
-
-

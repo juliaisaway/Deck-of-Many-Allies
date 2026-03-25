@@ -20,4 +20,4 @@ tags: [damage, ranged, risk, chaos]
 
 - 1: the adversary immediately takes an action  
 - 2–4: nothing happens  
-- 5–6: the adversary becomes Vulnerable temporarily and place 1 token on this card.
+- 5–6: the adversary becomes Vulnerable temporarily, and you place 1 token on this card.

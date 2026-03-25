@@ -1,6 +1,6 @@
 ---
 id: damir-and-ched
-name: Damir e Ched
+name: Damir and Ched
 
 ancestry: faun
 community: ridgeborne
@@ -10,7 +10,7 @@ keywords: [opportunist]
 tags: [damage, melee]
 ---
 
-# Damir e Ched
+# Damir and Ched
 
 > Young workers carrying heavy pickaxes to break stone... or monsters.
 

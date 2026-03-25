@@ -12,7 +12,7 @@ tags: [control, stealth, anti-magic]
 
 # Null Veyron
 
-> Criado por magos, aprendeu suas táticas e hoje é expecialista em silenciá-los.
+> Criado por magos, aprendeu suas táticas e hoje é especialista em silenciá-los.
 
 **Prever:** Sempre que um aliado usar uma Experiência em uma rolagem, coloque 1 marcador nesta carta.
 

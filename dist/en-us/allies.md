@@ -74,7 +74,7 @@
 
 ---
 
-### Damir e Ched
+### Damir and Ched
 
 #### Faun • Ridgeborne • Laborer
 
@@ -340,7 +340,7 @@ An ally can only benefit from one of these effects at a time. Applying a new eff
 
 - 1: the adversary immediately takes an action  
 - 2–4: nothing happens  
-- 5–6: the adversary becomes Vulnerable temporarily and place 1 token on this card.
+- 5–6: the adversary becomes Vulnerable temporarily, and you place 1 token on this card.
 
 ---
 

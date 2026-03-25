@@ -123,7 +123,7 @@ Use a tabela abaixo para determinar os limiares de dano de acordo com o patamar 
 
 ---
 
-## Keywords
+## Palavras-chave
 
 ### Canalizar
 
@@ -151,7 +151,7 @@ Aliados Oportunistas sabem tirar vantagem de erros e distrações. Quando um ata
 
 ### Preparado
 
-> Este aliado começa com {starting_tokens} marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
+> Este aliado começa com N marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
 Aliados Preparados entram em cena com recursos já prontos para uso. Esses marcadores representam planejamento, suprimentos ou energia acumulada antes do encontro.
 
@@ -183,9 +183,9 @@ Aliados com Rastrear prosperam no calor da batalha. Cada golpe bem-sucedido apro
 
 ### Testemunhar
 
-> Sempre que um aliado marcar X ou mais Pontos de Vida, coloque 1 marcador nesta carta.
+> Sempre que um aliado marcar N ou mais Pontos de Vida, coloque 1 marcador nesta carta.
 
-Aliados com Testemunhar ganham força ao presenciar o sofrimento ou a luta de seus companheiros. Quanto maior o valor de **X**, mais dano precisa ser sofrido para ativar a habilidade.
+Aliados com Testemunhar ganham força ao presenciar o sofrimento ou a luta de seus companheiros. Quanto maior o valor de N, mais dano precisa ser sofrido para ativar a habilidade.
 
 ---
 
@@ -305,7 +305,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 **Preparado (2):** Este aliado começa com 2 marcadores nesta carta. Ele não pode recuperar marcadores até o próximo descanso.
 
-**Segunda Chance:** Quando um aliado em alcance próximo falhar em um teste, Gaste 1 marcador para Elbek permitir que ele role novamente um dos seus Dados de Dualidade.
+**Segunda Chance:** Quando um aliado em alcance próximo falhar em um teste, gaste 1 marcador para Elbek permitir que ele role novamente um dos seus Dados de Dualidade.
 
 ---
 
@@ -423,7 +423,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 #### Fada • Fora da Lei • Canalha / Alquimista
 
-> Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades
+> Sempre com um frasco escondido e um plano improvisado, Nix transforma erros em oportunidades.
 
 **Oportunista:** Toda vez que um aliado errar um ataque, coloque 1 marcador nesta carta.
 
@@ -437,7 +437,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 #### Clank • Disciplinado • Caçador
 
-> Criado por magos, aprendeu suas táticas e hoje é expecialista em silenciá-los.
+> Criado por magos, aprendeu suas táticas e hoje é especialista em silenciá-los.
 
 **Prever:** Sempre que um aliado usar uma Experiência em uma rolagem, coloque 1 marcador nesta carta.
 
@@ -513,7 +513,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 #### Clank • Erudita • Estudioso / Protetor
 
-> Adaptativo a todas as situações, ele está sempre um passo a frente do impacto.
+> Adaptativo a todas as situações, ele está sempre um passo à frente do impacto.
 
 **Rastrear:** Sempre que um aliado causar dano a um adversário, coloque 1 marcador nesta carta.
 
@@ -536,8 +536,8 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 **Carga Descontrolada:** Gaste 3 marcadores para Torgin arremessar um explosivo em um adversário em alcance distante, causando 2d8 de dano físico. Após o ataque, role 1d6:
 
 - 1: o adversário realiza uma ação imediatamente
-- 2-4: nada acontece.
-- 5–6: o adversário fica Vulnerável temporariamente e coloque 1 marcador nesta carta.
+- 2–4: nada acontece.
+- 5–6: o adversário fica Vulnerável temporariamente, e coloque 1 marcador nesta carta.
 
 ---
 
@@ -545,7 +545,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 #### Goblin • Erudita • Estudioso / Arcanista
 
-> Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
+> Pequena estudante que dormia demais em aula... até perceber que essa poderia ser sua maior força.
 
 **Canalizar:** Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.
 

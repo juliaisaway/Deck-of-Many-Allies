@@ -12,7 +12,7 @@ tags: [control, area, ranged]
 
 # Vexlin Bell
 
-> Pequena estudante que dormia demais em aula... Até perceber que essa poderia ser sua maior força.
+> Pequena estudante que dormia demais em aula... até perceber que essa poderia ser sua maior força.
 
 **Canalizar:** Sempre que este aliado estiver em Foco, coloque 1 marcador nesta carta.
 

@@ -126,7 +126,7 @@ const LABELS = {
     lang: "PT-BR",
     basic: "Regras Básicas",
     optional: "Regras Opcionais",
-    keywords: "Keywords",
+    keywords: "Palavras-chave",
     allies: "Aliados",
     rulesTitle: "Regras",
   },
@@ -258,6 +258,45 @@ ${renderAllies(allies)}
   fs.writeFileSync(`${outputDir}/allies.md`, alliesBuild);
 }
 
+function buildIndex(locales) {
+  const entries = locales.map((locale) => {
+    const t = LABELS[locale] || LABELS[BASE_LOCALE];
+    const outputDir = `./${locale.replace("_", "-")}`;
+
+    return `## ${t.lang}
+
+- Start here: [${outputDir}/deck-of-many-allies-complete.md](${outputDir}/deck-of-many-allies-complete.md)
+- Rules only: [${outputDir}/rules.md](${outputDir}/rules.md)
+- Allies only: [${outputDir}/allies.md](${outputDir}/allies.md)
+
+Use the complete document when you want the full rules reference in one file.
+Use the split files when you want to share only player-facing ally cards or only the rules text.
+`;
+  });
+
+  const index = `# Deck of Many Allies
+
+This folder contains the compiled Markdown delivery for each supported language.
+
+## Suggested use
+
+1. Open the language you want.
+2. Start with the complete document if you want the full material in one file.
+3. Use the split files when you want to share only rules or only allies.
+
+## Files
+
+- \`deck-of-many-allies-complete.md\`: full reference with rules, keywords, and allies.
+- \`rules.md\`: basic rules, optional rules, and keyword glossary.
+- \`allies.md\`: ally entries only, ready to share at the table.
+- \`stats.md\`: project stats and localization coverage report.
+
+${entries.join("\n")}
+`;
+
+  fs.writeFileSync("dist/index.md", index);
+}
+
 // ===== EXECUTE =====
 
 export function run() {
@@ -266,6 +305,8 @@ export function run() {
   locales.forEach((locale) => {
     build(locale);
   });
+
+  buildIndex(locales);
 
   console.log("✅ Builds generated for:", locales.join(", "));
 }
