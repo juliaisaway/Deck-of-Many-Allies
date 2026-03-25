@@ -209,7 +209,7 @@ function build(locale) {
         a.name,
       );
 
-      const meta = `#### ${ancestry} - ${community} - ${role}`;
+      const meta = `#### ${ancestry} • ${community} • ${role}`;
 
       return `${name}\n\n${meta}\n\n${body}`;
     });
@@ -236,7 +236,7 @@ ${renderSection(t.keywords, keywords)}
 ${renderAllies(allies)}
 `;
 
-  const rulesBuild = `# Deck of Many Allies — ${t.rulesTitle} (${t.lang})
+  const rulesBuild = `# Deck of Many Allies - ${t.rulesTitle} (${t.lang})
 
 ${renderSection(t.basic, basicRules)}
 
@@ -249,7 +249,7 @@ ${renderSection(t.optional, optionalRules)}
 ${renderSection(t.keywords, keywords)}
 `;
 
-  const alliesBuild = `# Deck of Many Allies — ${t.allies} (${t.lang})
+  const alliesBuild = `# Deck of Many Allies - ${t.allies} (${t.lang})
 
 ${renderAllies(allies)}
 `;

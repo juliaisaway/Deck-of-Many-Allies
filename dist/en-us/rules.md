@@ -1,4 +1,4 @@
-# Deck of Many Allies — Rules (EN-US)
+# Deck of Many Allies - Rules (EN-US)
 
 ## Basic Rules
 

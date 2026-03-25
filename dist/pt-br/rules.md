@@ -1,4 +1,4 @@
-# Deck of Many Allies — Regras (PT-BR)
+# Deck of Many Allies - Regras (PT-BR)
 
 ## Regras Básicas
 
