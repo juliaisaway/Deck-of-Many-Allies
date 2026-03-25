@@ -1,13 +1,12 @@
 import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import { assert, assertNonEmptyArray } from "./lib/assert.js";
+import { validateKeywords } from "./lib/keywords.js";
+import { getLocales } from "./lib/locales.js";
+import { loadMarkdownFiles } from "./lib/markdown.js";
+import { pathToFileURL } from "node:url";
+import { validateTags } from "./lib/tags.js";
 
 // ===== CONFIG =====
-
-const LOCALES = fs.readdirSync("data/allies").filter((file) => {
-  const fullPath = path.join("data/allies", file);
-  return fs.statSync(fullPath).isDirectory();
-});
 
 const BASE_LOCALE = "en_us";
 
@@ -48,29 +47,7 @@ function warn(message) {
 }
 
 function loadFiles(dir) {
-  if (!fs.existsSync(dir)) return [];
-
-  return fs
-    .readdirSync(dir)
-    .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
-    .map((file) => {
-      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
-      const { data, content } = matter(raw);
-      return { file, data, content };
-    });
-}
-
-function assert(condition, message) {
-  if (!condition) {
-    console.error("❌ " + message);
-    process.exit(1);
-  }
-}
-
-function assertNonEmptyArray(value, field, file, locale) {
-  assert(value, `[${locale}] ${file} missing ${field}`);
-  assert(Array.isArray(value), `[${locale}] ${file} ${field} must be an array`);
-  assert(value.length > 0, `[${locale}] ${file} ${field} must not be empty`);
+  return loadMarkdownFiles(dir);
 }
 
 function isKebabCase(str) {
@@ -251,8 +228,8 @@ function validateLocale(locale) {
     assert(data.ancestry, `[${locale}] ${file} missing ancestry`);
     assert(data.role, `[${locale}] ${file} missing role`);
     assert(data.community, `[${locale}] ${file} missing community`);
-    assertNonEmptyArray(data.keywords, "keywords", file, locale);
-    assertNonEmptyArray(data.tags, "tags", file, locale);
+    validateKeywords(data.keywords, keywordIds, file, locale);
+    validateTags(data.tags, file, locale);
 
     const title = extractTitle(content);
 
@@ -303,10 +280,6 @@ function validateLocale(locale) {
     }
 
     // ===== KEYWORDS =====
-
-    data.keywords.forEach((k) => {
-      assert(keywordIds.has(k), `[${locale}] ${file} unknown keyword: ${k}`);
-    });
   });
 
   return {
@@ -337,11 +310,17 @@ function isEqual(a, b) {
 function validateCrossLocale(results) {
   const baseLocale = BASE_LOCALE;
   const baseAllies = loadFiles(`data/allies/${baseLocale}`);
+  const baseKeywords = loadFiles(`data/rules/${baseLocale}/keywords`);
 
   const baseMap = {};
+  const baseKeywordMap = {};
 
   baseAllies.forEach(({ data }) => {
     baseMap[data.id] = data;
+  });
+
+  baseKeywords.forEach(({ data }) => {
+    baseKeywordMap[data.id] = data;
   });
 
   Object.entries(results).forEach(([locale]) => {
@@ -364,6 +343,22 @@ function validateCrossLocale(results) {
 
     Object.keys(compareMap).forEach((id) => {
       assert(baseMap[id], `[i18n] Extra ally in ${locale}: ${id}`);
+    });
+
+    const compareKeywords = loadFiles(`data/rules/${locale}/keywords`);
+    const compareKeywordMap = {};
+    compareKeywords.forEach(({ data }) => {
+      compareKeywordMap[data.id] = data;
+    });
+
+    Object.keys(baseKeywordMap).forEach((id) => {
+      if (!compareKeywordMap[id]) {
+        console.warn(`⚠️ [i18n] Missing keyword in ${locale}: ${id}`);
+      }
+    });
+
+    Object.keys(compareKeywordMap).forEach((id) => {
+      assert(baseKeywordMap[id], `[i18n] Extra keyword in ${locale}: ${id}`);
     });
 
     // ===== STRUCTURAL VALIDATION =====
@@ -414,12 +409,22 @@ other (${locale}): ${JSON.stringify(other.tags)}`,
 
 // ===== RUN =====
 
-const results = {};
+export function run() {
+  const locales = getLocales();
+  const results = {};
 
-LOCALES.forEach((locale) => {
-  results[locale] = validateLocale(locale);
-});
+  locales.forEach((locale) => {
+    results[locale] = validateLocale(locale);
+  });
 
-validateCrossLocale(results);
+  validateCrossLocale(results);
 
-console.log("✅ Validation passed for all locales!");
+  console.log("✅ Validation passed for all locales!");
+}
+
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(process.argv[1]).href
+) {
+  run();
+}

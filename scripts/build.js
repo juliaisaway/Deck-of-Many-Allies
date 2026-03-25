@@ -1,51 +1,40 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { assert, assertNonEmptyArray } from "./lib/assert.js";
+import { validateKeywords } from "./lib/keywords.js";
+import { getLocales } from "./lib/locales.js";
+import { listMarkdownFiles, loadMarkdownFiles } from "./lib/markdown.js";
+import { pathToFileURL } from "node:url";
+import { validateTags } from "./lib/tags.js";
 
 // ===== CONFIG =====
 
 const BASE_LOCALE = "en_us";
 
-// ===== LOCALES (dinâmico) =====
-
-function getLocales() {
-  const alliesPath = "data/allies";
-
-  if (!fs.existsSync(alliesPath)) return [];
-
-  return fs.readdirSync(alliesPath).filter((name) => {
-    const fullPath = path.join(alliesPath, name);
-
-    return (
-      fs.statSync(fullPath).isDirectory() && /^[a-z]{2}(_[a-z]{2})?$/.test(name)
-    );
-  });
-}
-
 // ===== LOAD FILES =====
 
 function loadFiles(dir, fallbackDir = null) {
-  if (!fs.existsSync(dir)) {
-    if (fallbackDir && fs.existsSync(fallbackDir)) {
-      console.warn(`⚠️ Fallback used: ${dir} → ${fallbackDir}`);
-      dir = fallbackDir;
-    } else {
-      return [];
-    }
+  const fileMap = new Map();
+
+  if (fallbackDir && fs.existsSync(fallbackDir)) {
+    loadMarkdownFiles(fallbackDir).forEach((file) => {
+      fileMap.set(file.file, file);
+    });
   }
 
-  const files = fs.readdirSync(dir);
+  if (fs.existsSync(dir)) {
+    loadMarkdownFiles(dir).forEach((file) => {
+      fileMap.set(file.file, file);
+    });
+  } else if (fallbackDir && fs.existsSync(fallbackDir)) {
+    console.warn(`⚠️ Fallback used: ${dir} → ${fallbackDir}`);
+  }
 
-  return files.map((file) => {
-    const fullPath = path.join(dir, file);
-    const raw = fs.readFileSync(fullPath, "utf-8");
-    const { data, content } = matter(raw);
-
-    return {
-      ...data,
-      content: content.trim(),
-    };
-  });
+  return Array.from(fileMap.values()).map(({ data, content }) => ({
+    ...data,
+    content: content.trim(),
+  }));
 }
 
 // ===== SORT =====
@@ -78,7 +67,7 @@ function loadDictionary(dir, fallbackDir = null) {
     }
   }
 
-  const files = fs.readdirSync(dir);
+  const files = listMarkdownFiles(dir);
   const dict = {};
 
   files.forEach((file) => {
@@ -108,19 +97,6 @@ function resolveSingle(value, dict, fieldName, name) {
     return value.map((v) => dict[v] || v).join(" / ");
   }
   return dict[value] || value;
-}
-
-function assert(condition, message) {
-  if (!condition) {
-    console.error("❌ " + message);
-    process.exit(1);
-  }
-}
-
-function assertNonEmptyArray(value, field, name, locale) {
-  assert(value, `[${locale}] ${name} missing ${field}`);
-  assert(Array.isArray(value), `[${locale}] ${name} ${field} must be an array`);
-  assert(value.length > 0, `[${locale}] ${name} ${field} must not be empty`);
 }
 
 // ===== RENDERERS =====
@@ -203,13 +179,14 @@ function build(locale) {
   );
 
   const t = LABELS[locale] || LABELS[fallback];
+  const keywordIds = new Set(keywords.map((keyword) => keyword.id));
 
   // ===== RENDER ALLIES =====
 
   function renderAllies(allies) {
     const content = allies.map((a) => {
-      assertNonEmptyArray(a.keywords, "keywords", a.name, locale);
-      assertNonEmptyArray(a.tags, "tags", a.name, locale);
+      validateKeywords(a.keywords, keywordIds, a.name, locale);
+      validateTags(a.tags, a.name, locale);
 
       const bodyWithoutTitle = a.content.replace(/^# .*\n?/, "").trim();
       const body = shiftHeadings(bodyWithoutTitle, 2);
@@ -283,10 +260,20 @@ ${renderAllies(allies)}
 
 // ===== EXECUTE =====
 
-const locales = getLocales();
+export function run() {
+  const locales = getLocales();
 
-locales.forEach((locale) => {
-  build(locale);
-});
+  locales.forEach((locale) => {
+    build(locale);
+  });
 
-console.log("✅ Builds generated for:", locales.join(", "));
+  console.log("✅ Builds generated for:", locales.join(", "));
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  run();
+}
+
+
+
+

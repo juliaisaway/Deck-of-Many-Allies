@@ -1,6 +1,9 @@
 import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import { validateKeywords } from "./lib/keywords.js";
+import { getLocales } from "./lib/locales.js";
+import { loadMarkdownFiles } from "./lib/markdown.js";
+import { pathToFileURL } from "node:url";
+import { validateTags } from "./lib/tags.js";
 
 // ===== CONFIG =====
 
@@ -10,25 +13,7 @@ const BASE_PATH = "data";
 // ===== HELPERS =====
 
 function loadFiles(dir) {
-  if (!fs.existsSync(dir)) return [];
-
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".md") && !f.startsWith("_"))
-    .map((file) => {
-      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
-      const { data } = matter(raw);
-      return { file, data };
-    });
-}
-
-function getLocales() {
-  const dir = `${BASE_PATH}/allies`;
-
-  return fs.readdirSync(dir).filter((name) => {
-    const full = path.join(dir, name);
-    return fs.statSync(full).isDirectory() && /^[a-z]{2}_[a-z]{2}$/.test(name);
-  });
+  return loadMarkdownFiles(dir).map(({ file, data }) => ({ file, data }));
 }
 
 function countMap() {
@@ -44,19 +29,6 @@ function addToMap(map, value) {
   }
 
   map.set(value, (map.get(value) || 0) + 1);
-}
-
-function assert(condition, message) {
-  if (!condition) {
-    console.error("❌ " + message);
-    process.exit(1);
-  }
-}
-
-function assertNonEmptyArray(value, field, file, locale) {
-  assert(value, `[${locale}] ${file} missing ${field}`);
-  assert(Array.isArray(value), `[${locale}] ${file} ${field} must be an array`);
-  assert(value.length > 0, `[${locale}] ${file} ${field} must not be empty`);
 }
 
 function mapToSortedArray(map) {
@@ -152,6 +124,8 @@ function renderMap(title, map) {
 
 function generateStats(locale) {
   const allies = loadFiles(`${BASE_PATH}/allies/${locale}`);
+  const keywords = loadFiles(`${BASE_PATH}/rules/${locale}/keywords`);
+  const keywordIds = new Set(keywords.map(({ data }) => data.id));
 
   const ancestryLookup = loadSourceMap(`${BASE_PATH}/ancestries/${locale}`);
   const communityLookup = loadSourceMap(`${BASE_PATH}/communities/${locale}`);
@@ -171,8 +145,8 @@ function generateStats(locale) {
   };
 
   allies.forEach(({ data }) => {
-    assertNonEmptyArray(data.keywords, "keywords", data.id || "unknown ally", locale);
-    assertNonEmptyArray(data.tags, "tags", data.id || "unknown ally", locale);
+    validateKeywords(data.keywords, keywordIds, data.id || "unknown ally", locale);
+    validateTags(data.tags, data.id || "unknown ally", locale);
 
     stats.ids.add(data.id);
 
@@ -258,7 +232,7 @@ function generateMarkdown(results) {
 
 // ===== RUN =====
 
-function run() {
+export function run() {
   const locales = getLocales();
   const results = {};
 
@@ -274,4 +248,9 @@ function run() {
   console.log("📊 Stats generated at dist/stats.md");
 }
 
-run();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  run();
+}
+
+
+
