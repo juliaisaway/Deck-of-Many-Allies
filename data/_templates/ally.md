@@ -1,23 +1,23 @@
 ---
-id: unique-id                  # kebab-case, must be unique
-name: Ally Name                # localized name
+id: unique-id                  # required, kebab-case, must match filename
+name: Ally Name                # required, localized display name, must match the H1
 
-ancestry: human                # string OR array: [human, elf]
-community: wanderborne         # ALWAYS single
-role: performer                # string OR array: [performer, arcanist]
+ancestry: human                # required, string or array of existing ancestry ids
+community: wanderborne         # required, single existing community id
+role: performer                # required, string or array of existing role ids
 
-keywords: [track]
-tags: [support, control]
+keywords: [track]              # required, array of existing keyword ids
+tags: [support, control]       # required, array of lowercase tags for indexing
 
-author: your-name
+author: your-name              # optional, contributor credit
 ---
 
 # Ally Name
 
-> Short narrative description of the ally. One or two sentences that convey personality and role.
+> One or two sentences that quickly establish the ally's identity, tone, and narrative role.
 
-**Keyword Name:** Trigger description that generates markers.
+**Keyword Name:** Describe the trigger or passive effect that places or relates to tokens on this card.
 
-**Ability Name:** Spend X markers to do something. Clearly describe range, effect, and conditions.
+**Ability Name:** Spend X tokens to do something. State range, target, effect, and any roll or condition needed.
 
-**Ability Name (optional):** Additional abilities can be added as needed.
+**Ability Name (optional):** Add more abilities as needed, keeping the wording direct and easy to resolve at the table.

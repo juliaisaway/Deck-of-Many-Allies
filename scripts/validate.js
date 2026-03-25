@@ -67,6 +67,12 @@ function assert(condition, message) {
   }
 }
 
+function assertNonEmptyArray(value, field, file, locale) {
+  assert(value, `[${locale}] ${file} missing ${field}`);
+  assert(Array.isArray(value), `[${locale}] ${file} ${field} must be an array`);
+  assert(value.length > 0, `[${locale}] ${file} ${field} must not be empty`);
+}
+
 function isKebabCase(str) {
   return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(str);
 }
@@ -245,6 +251,8 @@ function validateLocale(locale) {
     assert(data.ancestry, `[${locale}] ${file} missing ancestry`);
     assert(data.role, `[${locale}] ${file} missing role`);
     assert(data.community, `[${locale}] ${file} missing community`);
+    assertNonEmptyArray(data.keywords, "keywords", file, locale);
+    assertNonEmptyArray(data.tags, "tags", file, locale);
 
     const title = extractTitle(content);
 
@@ -296,7 +304,7 @@ function validateLocale(locale) {
 
     // ===== KEYWORDS =====
 
-    (data.keywords || []).forEach((k) => {
+    data.keywords.forEach((k) => {
       assert(keywordIds.has(k), `[${locale}] ${file} unknown keyword: ${k}`);
     });
   });
@@ -381,23 +389,23 @@ other (${locale}): ${JSON.stringify(other[field])}`,
 
       // ===== KEYWORDS =====
 
-      if (!isEqual(base.keywords || [], other.keywords || [])) {
+      if (!isEqual(base.keywords, other.keywords)) {
         assert(
           false,
           `[i18n] Keyword mismatch in ${locale} for ally "${id}"
-base (${baseLocale}): ${JSON.stringify(base.keywords || [])}
-other (${locale}): ${JSON.stringify(other.keywords || [])}`,
+base (${baseLocale}): ${JSON.stringify(base.keywords)}
+other (${locale}): ${JSON.stringify(other.keywords)}`,
         );
       }
 
       // ===== TAGS =====
 
-      if (!isEqual(base.tags || [], other.tags || [])) {
+      if (!isEqual(base.tags, other.tags)) {
         assert(
           false,
           `[i18n] Tags mismatch in ${locale} for ally "${id}"
-base (${baseLocale}): ${JSON.stringify(base.tags || [])}
-other (${locale}): ${JSON.stringify(other.tags || [])}`,
+base (${baseLocale}): ${JSON.stringify(base.tags)}
+other (${locale}): ${JSON.stringify(other.tags)}`,
         );
       }
     });

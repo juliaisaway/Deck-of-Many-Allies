@@ -110,6 +110,19 @@ function resolveSingle(value, dict, fieldName, name) {
   return dict[value] || value;
 }
 
+function assert(condition, message) {
+  if (!condition) {
+    console.error("❌ " + message);
+    process.exit(1);
+  }
+}
+
+function assertNonEmptyArray(value, field, name, locale) {
+  assert(value, `[${locale}] ${name} missing ${field}`);
+  assert(Array.isArray(value), `[${locale}] ${name} ${field} must be an array`);
+  assert(value.length > 0, `[${locale}] ${name} ${field} must not be empty`);
+}
+
 // ===== RENDERERS =====
 
 function renderSection(title, items) {
@@ -195,6 +208,9 @@ function build(locale) {
 
   function renderAllies(allies) {
     const content = allies.map((a) => {
+      assertNonEmptyArray(a.keywords, "keywords", a.name, locale);
+      assertNonEmptyArray(a.tags, "tags", a.name, locale);
+
       const bodyWithoutTitle = a.content.replace(/^# .*\n?/, "").trim();
       const body = shiftHeadings(bodyWithoutTitle, 2);
 

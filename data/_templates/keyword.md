@@ -1,14 +1,14 @@
 ---
-id: keyword-id                # kebab-case, must be unique
-title: Keyword Name           # localized name
+id: keyword-id                # required, kebab-case, must match filename
+title: Keyword Name           # required, localized display name
 
-type: trigger                 # trigger | resource | state | scaling | passive
-has_parameter: false          # true if uses a variable (X)
-parameter: null               # use only if has_parameter = true
+type: trigger                 # required, one of: passive | trigger | active | scaling
+has_parameter: false          # optional, true if the keyword uses a variable such as X
+parameter: null               # required only when has_parameter = true
 
-author: your-name
+author: your-name             # optional, contributor credit
 ---
 
-> Trigger or effect description. Explain clearly when this keyword generates or uses markers.
+> Write the rules text first. Explain clearly when the keyword triggers, what it does, and whether it generates or spends tokens.
 
-Write a short paragraph explaining the narrative and mechanical intent of this keyword.
+Add a short paragraph describing the narrative and mechanical intent of the keyword in plain language.

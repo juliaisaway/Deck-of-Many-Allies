@@ -46,6 +46,19 @@ function addToMap(map, value) {
   map.set(value, (map.get(value) || 0) + 1);
 }
 
+function assert(condition, message) {
+  if (!condition) {
+    console.error("❌ " + message);
+    process.exit(1);
+  }
+}
+
+function assertNonEmptyArray(value, field, file, locale) {
+  assert(value, `[${locale}] ${file} missing ${field}`);
+  assert(Array.isArray(value), `[${locale}] ${file} ${field} must be an array`);
+  assert(value.length > 0, `[${locale}] ${file} ${field} must not be empty`);
+}
+
 function mapToSortedArray(map) {
   return Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
 }
@@ -158,14 +171,17 @@ function generateStats(locale) {
   };
 
   allies.forEach(({ data }) => {
+    assertNonEmptyArray(data.keywords, "keywords", data.id || "unknown ally", locale);
+    assertNonEmptyArray(data.tags, "tags", data.id || "unknown ally", locale);
+
     stats.ids.add(data.id);
 
     addToMap(stats.ancestry, data.ancestry);
     addToMap(stats.community, data.community);
     addToMap(stats.role, data.role);
 
-    (data.keywords || []).forEach((k) => addToMap(stats.keywords, k));
-    (data.tags || []).forEach((t) => addToMap(stats.tags, t));
+    data.keywords.forEach((k) => addToMap(stats.keywords, k));
+    data.tags.forEach((t) => addToMap(stats.tags, t));
   });
 
   return stats;

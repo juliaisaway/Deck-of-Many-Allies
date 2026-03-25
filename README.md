@@ -19,9 +19,11 @@ This project provides:
 - 🧩 A structured system for allies
 - 🃏 Ready-to-use ally cards
 - ⚙️ A keyword-driven mechanic system
+- 🏷️ Required keyword and tag metadata for every ally
 - 🌍 Full support for multiple languages (i18n)
 
 All content is written in Markdown and compiled into ready-to-use documents.
+Each ally entry includes validated metadata such as ancestry, community, role, keywords, and tags.
 
 ---
 
@@ -29,17 +31,18 @@ All content is written in Markdown and compiled into ready-to-use documents.
 
 `/data/`
 
-- `/_templates_` → Example files for creating new content  
-- `/allies` → Individual allies  
-- `/ancestries` → Ancestry definitions  
-- `/communities` → Community definitions  
-- `/roles` → Role definitions  
-- `/rules` → Rules & keywords  
+- `/_templates/` → Example files for creating new content  
+- `/allies/` → Individual allies  
+- `/ancestries/` → Ancestry definitions  
+- `/communities/` → Community definitions  
+- `/roles/` → Role definitions  
+- `/rules/` → Rules and keywords  
 
 `/dist/`
 
-- `pt-br/` → Compiled Portuguese version  
-- `en-us/` → Compiled English version  
+- `/pt-br/` → Compiled Portuguese version  
+- `/en-us/` → Compiled English version  
+- `/stats.md` → Generated project statistics and i18n report  
   
 ---
 
@@ -56,6 +59,12 @@ All content is fully localized and validated to ensure consistency across langua
 
 ## 🛠️ Usage
 
+Install dependencies first:
+
+```bash
+npm install
+```
+
 ### Build the project
 
 ```bash
@@ -65,12 +74,32 @@ npm run build
 This will:
 
 - Validate all data
-- Generate compiled files in /dist
+- Generate `dist/stats.md` with project statistics
+- Generate compiled files in `dist/`
 
-Or, you can validate only
+You can validate only:
 
 ```bash
 npm run validate
+```
+
+You can generate only the stats report:
+
+```bash
+npm run stats
+```
+
+The stats report includes:
+
+- Total ally count
+- Ancestry and community usage grouped by source
+- Role, keyword, and tag usage counts
+- An i18n report showing missing or extra localized allies
+
+If you only want to rebuild the final Markdown output without running validation or stats generation, you can use:
+
+```bash
+npm run build:only
 ```
 
 ---
@@ -91,7 +120,7 @@ Please ensure all contributions follow the existing structure and pass validatio
 
 ## 🧩 Templates
 
-Use the templates in `/templates` when creating new content:
+Use the templates in `data/_templates/` when creating new content:
 
 - `ally.md`
 - `keyword.md`
