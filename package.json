@@ -5,7 +5,7 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "test": "node tests/keywords.test.js && node tests/locales.test.js && node tests/markdown.test.js && node tests/tags.test.js",
+    "test": "npm run validate && node tests/keywords.test.js && node tests/locales.test.js && node tests/markdown-lib.test.js && node tests/validate-allies.test.js && node tests/validate-reference-data.test.js && node tests/validate-i18n.test.js && node tests/build-output.test.js && node tests/project-tools.test.js && node tests/tags.test.js",
     "validate": "node scripts/validate.js",
     "build": "npm run validate && node scripts/stats.js && node scripts/build.js",
     "build:only": "node scripts/build.js",
@@ -34,3 +34,4 @@
     "gray-matter": "^4.0.3"
   }
 }
+

@@ -1,5 +1,4 @@
-import fs from "fs";
-import { assert, assertNonEmptyArray } from "./lib/assert.js";
+import { assert } from "./lib/assert.js";
 import { validateKeywords } from "./lib/keywords.js";
 import { getLocales } from "./lib/locales.js";
 import { loadMarkdownFiles } from "./lib/markdown.js";

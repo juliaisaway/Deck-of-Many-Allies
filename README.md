@@ -1,7 +1,7 @@
 ![Build](https://img.shields.io/badge/build-passing-green)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
 
-# Deck of Many Allies
+# 🃏 Deck of Many Allies
 
 A modular ally system for Daggerheart games.
 

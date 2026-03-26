@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { assert, assertNonEmptyArray } from "./lib/assert.js";
 import { validateKeywords } from "./lib/keywords.js";
 import { getLocales } from "./lib/locales.js";
 import { listMarkdownFiles, loadMarkdownFiles } from "./lib/markdown.js";
@@ -115,7 +114,7 @@ function renderSection(title, items) {
 
 const LABELS = {
   en_us: {
-    lang: "EN-US",
+    lang: "en-us",
     basic: "Basic Rules",
     optional: "Optional Rules",
     keywords: "Keywords",
@@ -123,7 +122,7 @@ const LABELS = {
     rulesTitle: "Rules",
   },
   pt_br: {
-    lang: "PT-BR",
+    lang: "pt-br",
     basic: "Regras Básicas",
     optional: "Regras Opcionais",
     keywords: "Palavras-chave",
@@ -270,13 +269,13 @@ function buildIndex(locales) {
 - Allies only: [${outputDir}/allies.md](${outputDir}/allies.md)
 
 Use the complete document when you want the full rules reference in one file.
-Use the split files when you want to share only player-facing ally cards or only the rules text.
-`;
+Use the split files when you want to separate the GM rules reference from ally handouts you may choose to share with players.`;
   });
 
-  const index = `# Deck of Many Allies
+  const index = `# 🃏 Deck of Many Allies
 
 This folder contains the compiled Markdown delivery for each supported language.
+It is designed primarily as a powerful GM-facing tool to support encounter prep, improvisation, and scene play at the table, rather than as a player-facing rules handout.
 
 ## Suggested use
 
@@ -291,7 +290,9 @@ This folder contains the compiled Markdown delivery for each supported language.
 - \`allies.md\`: ally entries only, ready to share at the table.
 - \`stats.md\`: project stats and localization coverage report.
 
-${entries.join("\n")}
+---
+
+${entries.join("\n\n")}
 `;
 
   fs.writeFileSync("dist/index.md", index);
@@ -311,10 +312,9 @@ export function run() {
   console.log("✅ Builds generated for:", locales.join(", "));
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(process.argv[1]).href
+) {
   run();
 }
-
-
-
-
