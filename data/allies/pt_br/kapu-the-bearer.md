@@ -4,7 +4,7 @@ name: Kapu, o Portador
 
 ancestry: galapa
 community: wildborne
-role: warden
+role: [warden, devout]
 
 keywords: [witness]
 tags: [support, stress, drain]

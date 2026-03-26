@@ -1,4 +1,4 @@
-# Deck of Many Allies (PT-BR)
+# Deck of Many Allies (pt-br)
 
 ## Regras Básicas
 
@@ -363,7 +363,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ### Kapu, o Portador
 
-#### Galapa • Silvestre • Protetor
+#### Galapa • Silvestre • Protetor / Devoto
 
 > Ele alivia o peso da fadiga… e escolhe quem o carregará depois.
 
@@ -375,7 +375,7 @@ Aliados com Triunfo se fortalecem quando a batalha vira a favor do grupo. Cada i
 
 ---
 
-### Karl Bouldervein
+### Karl Shatterbeard
 
 #### Anão • Subterrâneo • Caçador / Pistoleiro
 
@@ -557,7 +557,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ### Yakov Kargan
 
-#### Orc • Silvestre • Espiritista
+#### Orc • Silvestre • Espiritista / Protetor
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

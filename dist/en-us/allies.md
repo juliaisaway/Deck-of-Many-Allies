@@ -1,4 +1,4 @@
-# Deck of Many Allies - Allies (EN-US)
+# Deck of Many Allies - Allies (en-us)
 
 ## Allies
 
@@ -166,7 +166,7 @@
 
 ### Kapu, the Bearer
 
-#### Galapa • Wildborne • Warden
+#### Galapa • Wildborne • Warden / Devout
 
 > He eases the burden of fatigue… and chooses who will carry it next.
 
@@ -178,7 +178,7 @@
 
 ---
 
-### Karl Bouldervein
+### Karl Shatterbeard
 
 #### Dwarf • Underborne • Hunter / Gunslinger
 
@@ -360,7 +360,7 @@ An ally can only benefit from one of these effects at a time. Applying a new eff
 
 ### Yakov Kargan
 
-#### Orc • Wildborne • Spiritist
+#### Orc • Wildborne • Spiritist / Warden
 
 > He bends the earth to his will, making his allies harder to bring down.
 

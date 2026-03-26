@@ -1,6 +1,6 @@
 ---
-id: karl-bouldervein
-name: Karl Bouldervein
+id: karl-shatterbeard
+name: Karl Shatterbeard
 
 ancestry: dwarf
 community: underborne
@@ -10,7 +10,7 @@ keywords: [opportunist]
 tags: [control, area, melee]
 ---
 
-# Karl Bouldervein
+# Karl Shatterbeard
 
 > Veterano das encostas, acredita que um bom disparo resolve o que palavras não conseguem.
 

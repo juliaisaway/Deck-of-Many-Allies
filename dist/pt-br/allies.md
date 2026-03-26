@@ -1,4 +1,4 @@
-# Deck of Many Allies - Aliados (PT-BR)
+# Deck of Many Allies - Aliados (pt-br)
 
 ## Aliados
 
@@ -166,7 +166,7 @@
 
 ### Kapu, o Portador
 
-#### Galapa • Silvestre • Protetor
+#### Galapa • Silvestre • Protetor / Devoto
 
 > Ele alivia o peso da fadiga… e escolhe quem o carregará depois.
 
@@ -178,7 +178,7 @@
 
 ---
 
-### Karl Bouldervein
+### Karl Shatterbeard
 
 #### Anão • Subterrâneo • Caçador / Pistoleiro
 
@@ -360,7 +360,7 @@ Um alvo só pode se beneficiar de um destes efeitos por vez. Aplicar um novo efe
 
 ### Yakov Kargan
 
-#### Orc • Silvestre • Espiritista
+#### Orc • Silvestre • Espiritista / Protetor
 
 > Ele dobra a terra à sua vontade para tornar seus aliados difíceis de derrubar.
 

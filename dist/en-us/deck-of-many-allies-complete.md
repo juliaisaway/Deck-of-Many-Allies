@@ -1,4 +1,4 @@
-# Deck of Many Allies (EN-US)
+# Deck of Many Allies (en-us)
 
 ## Basic Rules
 
@@ -363,7 +363,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ### Kapu, the Bearer
 
-#### Galapa • Wildborne • Warden
+#### Galapa • Wildborne • Warden / Devout
 
 > He eases the burden of fatigue… and chooses who will carry it next.
 
@@ -375,7 +375,7 @@ Allies with Witness draw strength from the suffering and struggle of their compa
 
 ---
 
-### Karl Bouldervein
+### Karl Shatterbeard
 
 #### Dwarf • Underborne • Hunter / Gunslinger
 
@@ -557,7 +557,7 @@ An ally can only benefit from one of these effects at a time. Applying a new eff
 
 ### Yakov Kargan
 
-#### Orc • Wildborne • Spiritist
+#### Orc • Wildborne • Spiritist / Warden
 
 > He bends the earth to his will, making his allies harder to bring down.
 

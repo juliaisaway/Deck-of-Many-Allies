@@ -4,7 +4,7 @@ name: Yakov Kargan
 
 ancestry: orc
 community: wildborne
-role: spiritist
+role: [spiritist, warden]
 
 keywords: [pressured]
 tags: [support, defense]
